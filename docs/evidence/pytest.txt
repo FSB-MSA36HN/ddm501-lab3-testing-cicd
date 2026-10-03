@@ -1,0 +1,100 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.11.15, pytest-7.4.3, pluggy-1.6.0 -- /Users/thanhhigk/Study/devops/ddm501-lab3-starter/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/thanhhigk/Study/devops/ddm501-lab3-starter
+configfile: pyproject.toml
+testpaths: tests
+plugins: platformdirs-4.12.2, cov-4.1.0, asyncio-0.23.2, anyio-3.7.1
+asyncio: mode=Mode.STRICT
+collecting ... collected 73 items
+
+tests/data/test_data_quality.py::test_schema_and_completeness PASSED     [  1%]
+tests/data/test_data_quality.py::test_rating_range_and_distribution PASSED [  2%]
+tests/data/test_data_quality.py::test_entities_and_unique_pairs PASSED   [  4%]
+tests/integration/test_api.py::test_metadata_and_health PASSED           [  5%]
+tests/integration/test_api.py::test_prediction PASSED                    [  6%]
+tests/integration/test_api.py::test_batch_matches_single PASSED          [  8%]
+tests/integration/test_api.py::test_reject_invalid_payload[payload0] PASSED [  9%]
+tests/integration/test_api.py::test_reject_invalid_payload[payload1] PASSED [ 10%]
+tests/integration/test_api.py::test_reject_invalid_payload[payload2] PASSED [ 12%]
+tests/integration/test_api.py::test_reject_invalid_payload[payload3] PASSED [ 13%]
+tests/integration/test_api.py::test_reject_invalid_payload[payload4] PASSED [ 15%]
+tests/integration/test_api.py::test_reject_invalid_payload[payload5] PASSED [ 16%]
+tests/integration/test_api.py::test_reject_invalid_batch[predictions0] PASSED [ 17%]
+tests/integration/test_api.py::test_reject_invalid_batch[predictions1] PASSED [ 19%]
+tests/integration/test_api.py::test_reject_invalid_batch[predictions2] PASSED [ 20%]
+tests/integration/test_api.py::test_http_errors PASSED                   [ 21%]
+tests/integration/test_api.py::test_unavailable_and_failed_model[/predict-payload0] PASSED [ 23%]
+tests/integration/test_api.py::test_unavailable_and_failed_model[/predict/batch-payload1] PASSED [ 24%]
+tests/integration/test_api.py::test_startup_failure_clears_old_model PASSED [ 26%]
+tests/model/test_model_behavior.py::test_repeat_and_order_invariance PASSED [ 27%]
+tests/model/test_model_behavior.py::test_known_pairs[196-242] PASSED     [ 28%]
+tests/model/test_model_behavior.py::test_known_pairs[186-302] PASSED     [ 30%]
+tests/model/test_model_behavior.py::test_known_pairs[22-377] PASSED      [ 31%]
+tests/model/test_model_behavior.py::test_cold_start[new_user-242] PASSED [ 32%]
+tests/model/test_model_behavior.py::test_cold_start[196-new_movie] PASSED [ 34%]
+tests/model/test_model_behavior.py::test_cold_start[new_user-new_movie] PASSED [ 35%]
+tests/model/test_model_behavior.py::test_unknown_both_uses_global_mean PASSED [ 36%]
+tests/model/test_model_behavior.py::test_directional_movie_preference PASSED [ 38%]
+tests/model/test_model_behavior.py::test_out_of_fold_performance_gate PASSED [ 39%]
+tests/unit/test_model.py::test_loaded_model PASSED                       [ 41%]
+tests/unit/test_model.py::test_rounding_and_clipping[-10.0-1.0] PASSED   [ 42%]
+tests/unit/test_model.py::test_rounding_and_clipping[9.0-5.0] PASSED     [ 43%]
+tests/unit/test_model.py::test_rounding_and_clipping[3.456-3.46] PASSED  [ 45%]
+tests/unit/test_model.py::test_batch_preserves_order PASSED              [ 46%]
+tests/unit/test_model.py::test_unloaded_model_fails[predict-args0] PASSED [ 47%]
+tests/unit/test_model.py::test_unloaded_model_fails[predict_batch-args1] PASSED [ 49%]
+tests/unit/test_model.py::test_invalid_ids_fail[None-2] PASSED           [ 50%]
+tests/unit/test_model.py::test_invalid_ids_fail[-2] PASSED               [ 52%]
+tests/unit/test_model.py::test_invalid_ids_fail[1- ] PASSED              [ 53%]
+tests/unit/test_model.py::test_invalid_ids_fail[1-2] PASSED              [ 54%]
+tests/unit/test_model.py::test_missing_artifact PASSED                   [ 56%]
+tests/unit/test_model.py::test_corrupt_artifact PASSED                   [ 57%]
+tests/unit/test_model.py::test_singleton_reset PASSED                    [ 58%]
+tests/unit/test_schemas.py::test_strip_ids[PredictionRequest] PASSED     [ 60%]
+tests/unit/test_schemas.py::test_strip_ids[PredictionItem] PASSED        [ 61%]
+tests/unit/test_schemas.py::test_invalid_request[payload0-PredictionRequest] PASSED [ 63%]
+tests/unit/test_schemas.py::test_invalid_request[payload0-PredictionItem] PASSED [ 64%]
+tests/unit/test_schemas.py::test_invalid_request[payload1-PredictionRequest] PASSED [ 65%]
+tests/unit/test_schemas.py::test_invalid_request[payload1-PredictionItem] PASSED [ 67%]
+tests/unit/test_schemas.py::test_invalid_request[payload2-PredictionRequest] PASSED [ 68%]
+tests/unit/test_schemas.py::test_invalid_request[payload2-PredictionItem] PASSED [ 69%]
+tests/unit/test_schemas.py::test_invalid_request[payload3-PredictionRequest] PASSED [ 71%]
+tests/unit/test_schemas.py::test_invalid_request[payload3-PredictionItem] PASSED [ 72%]
+tests/unit/test_schemas.py::test_invalid_request[payload4-PredictionRequest] PASSED [ 73%]
+tests/unit/test_schemas.py::test_invalid_request[payload4-PredictionItem] PASSED [ 75%]
+tests/unit/test_schemas.py::test_invalid_request[payload5-PredictionRequest] PASSED [ 76%]
+tests/unit/test_schemas.py::test_invalid_request[payload5-PredictionItem] PASSED [ 78%]
+tests/unit/test_schemas.py::test_invalid_request[payload6-PredictionRequest] PASSED [ 79%]
+tests/unit/test_schemas.py::test_invalid_request[payload6-PredictionItem] PASSED [ 80%]
+tests/unit/test_schemas.py::test_invalid_request[payload7-PredictionRequest] PASSED [ 82%]
+tests/unit/test_schemas.py::test_invalid_request[payload7-PredictionItem] PASSED [ 83%]
+tests/unit/test_schemas.py::test_invalid_request[payload8-PredictionRequest] PASSED [ 84%]
+tests/unit/test_schemas.py::test_invalid_request[payload8-PredictionItem] PASSED [ 86%]
+tests/unit/test_schemas.py::test_response_bounds[1.0] PASSED             [ 87%]
+tests/unit/test_schemas.py::test_response_bounds[3.5] PASSED             [ 89%]
+tests/unit/test_schemas.py::test_response_bounds[5.0] PASSED             [ 90%]
+tests/unit/test_schemas.py::test_response_invalid_rating[0.99] PASSED    [ 91%]
+tests/unit/test_schemas.py::test_response_invalid_rating[5.01] PASSED    [ 93%]
+tests/unit/test_schemas.py::test_response_invalid_rating[nan] PASSED     [ 94%]
+tests/unit/test_schemas.py::test_response_invalid_rating[inf] PASSED     [ 95%]
+tests/unit/test_schemas.py::test_batch_limits[0] PASSED                  [ 97%]
+tests/unit/test_schemas.py::test_batch_limits[101] PASSED                [ 98%]
+tests/unit/test_schemas.py::test_max_batch_and_health PASSED             [100%]
+
+--------- coverage: platform darwin, python 3.11.15-final-0 ----------
+Name              Stmts   Miss  Cover   Missing
+-----------------------------------------------
+app/__init__.py       1      0   100%
+app/config.py        13      0   100%
+app/main.py          51      0   100%
+app/model.py         46      0   100%
+app/schemas.py       28      0   100%
+-----------------------------------------------
+TOTAL               139      0   100%
+Coverage HTML written to dir htmlcov
+Coverage XML written to file coverage.xml
+
+Required test coverage of 80% reached. Total coverage: 100.00%
+
+============================== 73 passed in 0.52s ==============================
