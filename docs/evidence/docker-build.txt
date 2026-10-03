@@ -1,0 +1,520 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 770B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11-slim
+#2 DONE 1.3s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 113B done
+#3 DONE 0.0s
+
+#4 [1/7] FROM docker.io/library/python:3.11-slim@sha256:bab1b7ef4b450c81002278d035eff85ebe394ae94df904f7a3ba14f7e16e487b
+#4 resolve docker.io/library/python:3.11-slim@sha256:bab1b7ef4b450c81002278d035eff85ebe394ae94df904f7a3ba14f7e16e487b done
+#4 DONE 0.0s
+
+#5 [2/7] WORKDIR /app
+#5 CACHED
+
+#6 [internal] load build context
+#6 transferring context: 4.92MB 0.0s done
+#6 DONE 0.0s
+
+#7 [3/7] COPY requirements*.txt ./
+#7 DONE 0.0s
+
+#8 [4/7] RUN apt-get update && apt-get install -y --no-install-recommends g++     && pip install --no-cache-dir -r requirements-build.txt     && pip install --no-cache-dir --no-build-isolation -r requirements.txt     && apt-get purge -y g++ && apt-get autoremove -y && rm -rf /var/lib/apt/lists/*
+#8 0.190 Hit:1 http://deb.debian.org/debian trixie InRelease
+#8 0.229 Get:2 http://deb.debian.org/debian trixie-updates InRelease [47.3 kB]
+#8 0.322 Get:3 http://deb.debian.org/debian-security trixie-security InRelease [43.4 kB]
+#8 0.382 Get:4 http://deb.debian.org/debian trixie/main arm64 Packages [9614 kB]
+#8 1.307 Get:5 http://deb.debian.org/debian trixie-updates/main arm64 Packages [4424 B]
+#8 1.353 Get:6 http://deb.debian.org/debian-security trixie-security/main arm64 Packages [265 kB]
+#8 1.815 Fetched 9974 kB in 2s (5706 kB/s)
+#8 1.815 Reading package lists...
+#8 2.038 Reading package lists...
+#8 2.245 Building dependency tree...
+#8 2.297 Reading state information...
+#8 2.375 The following additional packages will be installed:
+#8 2.375   binutils binutils-aarch64-linux-gnu binutils-common cpp cpp-14
+#8 2.375   cpp-14-aarch64-linux-gnu cpp-aarch64-linux-gnu g++-14
+#8 2.375   g++-14-aarch64-linux-gnu g++-aarch64-linux-gnu gcc gcc-14
+#8 2.375   gcc-14-aarch64-linux-gnu gcc-aarch64-linux-gnu libasan8 libatomic1
+#8 2.375   libbinutils libc-dev-bin libc6-dev libcc1-0 libcrypt-dev libctf-nobfd0
+#8 2.375   libctf0 libgcc-14-dev libgomp1 libgprofng0 libhwasan0 libisl23 libitm1
+#8 2.375   libjansson4 liblsan0 libmpc3 libmpfr6 libsframe1 libstdc++-14-dev libtsan2
+#8 2.375   libubsan1 linux-libc-dev rpcsvc-proto
+#8 2.376 Suggested packages:
+#8 2.376   binutils-doc gprofng-gui binutils-gold cpp-doc gcc-14-locales cpp-14-doc
+#8 2.376   gcc-14-doc gcc-multilib make manpages-dev autoconf automake libtool flex
+#8 2.376   bison gdb gcc-doc gdb-aarch64-linux-gnu libc-devtools glibc-doc
+#8 2.376   libstdc++-14-doc
+#8 2.376 Recommended packages:
+#8 2.376   manpages manpages-dev
+#8 2.442 The following NEW packages will be installed:
+#8 2.443   binutils binutils-aarch64-linux-gnu binutils-common cpp cpp-14
+#8 2.443   cpp-14-aarch64-linux-gnu cpp-aarch64-linux-gnu g++ g++-14
+#8 2.443   g++-14-aarch64-linux-gnu g++-aarch64-linux-gnu gcc gcc-14
+#8 2.443   gcc-14-aarch64-linux-gnu gcc-aarch64-linux-gnu libasan8 libatomic1
+#8 2.443   libbinutils libc-dev-bin libc6-dev libcc1-0 libcrypt-dev libctf-nobfd0
+#8 2.443   libctf0 libgcc-14-dev libgomp1 libgprofng0 libhwasan0 libisl23 libitm1
+#8 2.443   libjansson4 liblsan0 libmpc3 libmpfr6 libsframe1 libstdc++-14-dev libtsan2
+#8 2.443   libubsan1 linux-libc-dev rpcsvc-proto
+#8 2.567 0 upgraded, 40 newly installed, 0 to remove and 1 not upgraded.
+#8 2.567 Need to get 62.4 MB of archives.
+#8 2.567 After this operation, 262 MB of additional disk space will be used.
+#8 2.567 Get:1 http://deb.debian.org/debian trixie/main arm64 libsframe1 arm64 2.44-3 [77.8 kB]
+#8 2.680 Get:2 http://deb.debian.org/debian trixie/main arm64 binutils-common arm64 2.44-3 [2509 kB]
+#8 2.994 Get:3 http://deb.debian.org/debian trixie/main arm64 libbinutils arm64 2.44-3 [660 kB]
+#8 3.114 Get:4 http://deb.debian.org/debian trixie/main arm64 libgprofng0 arm64 2.44-3 [668 kB]
+#8 3.162 Get:5 http://deb.debian.org/debian trixie/main arm64 libctf-nobfd0 arm64 2.44-3 [152 kB]
+#8 3.175 Get:6 http://deb.debian.org/debian trixie/main arm64 libctf0 arm64 2.44-3 [84.2 kB]
+#8 3.184 Get:7 http://deb.debian.org/debian trixie/main arm64 libjansson4 arm64 2.14-2+b3 [39.2 kB]
+#8 3.185 Get:8 http://deb.debian.org/debian trixie/main arm64 binutils-aarch64-linux-gnu arm64 2.44-3 [820 kB]
+#8 3.309 Get:9 http://deb.debian.org/debian trixie/main arm64 binutils arm64 2.44-3 [262 kB]
+#8 3.331 Get:10 http://deb.debian.org/debian trixie/main arm64 libisl23 arm64 0.27-1 [601 kB]
+#8 3.383 Get:11 http://deb.debian.org/debian trixie/main arm64 libmpfr6 arm64 4.2.2-1 [685 kB]
+#8 3.552 Get:12 http://deb.debian.org/debian trixie/main arm64 libmpc3 arm64 1.3.1-1+b3 [50.5 kB]
+#8 3.556 Get:13 http://deb.debian.org/debian trixie/main arm64 cpp-14-aarch64-linux-gnu arm64 14.2.0-19 [9169 kB]
+#8 4.236 Get:14 http://deb.debian.org/debian trixie/main arm64 cpp-14 arm64 14.2.0-19 [1276 B]
+#8 4.237 Get:15 http://deb.debian.org/debian trixie/main arm64 cpp-aarch64-linux-gnu arm64 4:14.2.0-1 [4832 B]
+#8 4.237 Get:16 http://deb.debian.org/debian trixie/main arm64 cpp arm64 4:14.2.0-1 [1568 B]
+#8 4.237 Get:17 http://deb.debian.org/debian trixie/main arm64 libcc1-0 arm64 14.2.0-19 [42.2 kB]
+#8 4.243 Get:18 http://deb.debian.org/debian trixie/main arm64 libgomp1 arm64 14.2.0-19 [124 kB]
+#8 4.253 Get:19 http://deb.debian.org/debian trixie/main arm64 libitm1 arm64 14.2.0-19 [24.2 kB]
+#8 4.254 Get:20 http://deb.debian.org/debian trixie/main arm64 libatomic1 arm64 14.2.0-19 [10.1 kB]
+#8 4.255 Get:21 http://deb.debian.org/debian trixie/main arm64 libasan8 arm64 14.2.0-19 [2578 kB]
+#8 4.482 Get:22 http://deb.debian.org/debian trixie/main arm64 liblsan0 arm64 14.2.0-19 [1161 kB]
+#8 4.580 Get:23 http://deb.debian.org/debian trixie/main arm64 libtsan2 arm64 14.2.0-19 [2383 kB]
+#8 4.787 Get:24 http://deb.debian.org/debian trixie/main arm64 libubsan1 arm64 14.2.0-19 [1039 kB]
+#8 4.927 Get:25 http://deb.debian.org/debian trixie/main arm64 libhwasan0 arm64 14.2.0-19 [1442 kB]
+#8 5.053 Get:26 http://deb.debian.org/debian trixie/main arm64 libgcc-14-dev arm64 14.2.0-19 [2359 kB]
+#8 5.307 Get:27 http://deb.debian.org/debian trixie/main arm64 gcc-14-aarch64-linux-gnu arm64 14.2.0-19 [17.7 MB]
+#8 6.834 Get:28 http://deb.debian.org/debian trixie/main arm64 gcc-14 arm64 14.2.0-19 [529 kB]
+#8 6.878 Get:29 http://deb.debian.org/debian trixie/main arm64 gcc-aarch64-linux-gnu arm64 4:14.2.0-1 [1440 B]
+#8 6.878 Get:30 http://deb.debian.org/debian trixie/main arm64 gcc arm64 4:14.2.0-1 [5136 B]
+#8 6.879 Get:31 http://deb.debian.org/debian trixie/main arm64 libc-dev-bin arm64 2.41-12+deb13u4 [59.1 kB]
+#8 6.884 Get:32 http://deb.debian.org/debian-security trixie-security/main arm64 linux-libc-dev all 6.12.111-1 [2988 kB]
+#8 7.142 Get:33 http://deb.debian.org/debian trixie/main arm64 libcrypt-dev arm64 1:4.4.38-1 [123 kB]
+#8 7.154 Get:34 http://deb.debian.org/debian trixie/main arm64 rpcsvc-proto arm64 1.4.3-1+b1 [60.5 kB]
+#8 7.158 Get:35 http://deb.debian.org/debian trixie/main arm64 libc6-dev arm64 2.41-12+deb13u4 [1624 kB]
+#8 7.300 Get:36 http://deb.debian.org/debian trixie/main arm64 libstdc++-14-dev arm64 14.2.0-19 [2295 kB]
+#8 7.499 Get:37 http://deb.debian.org/debian trixie/main arm64 g++-14-aarch64-linux-gnu arm64 14.2.0-19 [10.1 MB]
+#8 8.525 Get:38 http://deb.debian.org/debian trixie/main arm64 g++-14 arm64 14.2.0-19 [22.5 kB]
+#8 8.533 Get:39 http://deb.debian.org/debian trixie/main arm64 g++-aarch64-linux-gnu arm64 4:14.2.0-1 [1200 B]
+#8 8.533 Get:40 http://deb.debian.org/debian trixie/main arm64 g++ arm64 4:14.2.0-1 [1332 B]
+#8 8.620 debconf: unable to initialize frontend: Dialog
+#8 8.620 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#8 8.620 debconf: falling back to frontend: Readline
+#8 8.620 debconf: unable to initialize frontend: Readline
+#8 8.620 debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/aarch64-linux-gnu/perl/5.40.1 /usr/local/share/perl/5.40.1 /usr/lib/aarch64-linux-gnu/perl5/5.40 /usr/share/perl5 /usr/lib/aarch64-linux-gnu/perl-base /usr/lib/aarch64-linux-gnu/perl/5.40 /usr/share/perl/5.40 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8, <STDIN> line 40.)
+#8 8.620 debconf: falling back to frontend: Teletype
+#8 8.621 debconf: unable to initialize frontend: Teletype
+#8 8.621 debconf: (This frontend requires a controlling tty.)
+#8 8.621 debconf: falling back to frontend: Noninteractive
+#8 9.032 Fetched 62.4 MB in 6s (10.3 MB/s)
+#8 9.039 Selecting previously unselected package libsframe1:arm64.
+#8 9.039 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 5657 files and directories currently installed.)
+#8 9.041 Preparing to unpack .../00-libsframe1_2.44-3_arm64.deb ...
+#8 9.042 Unpacking libsframe1:arm64 (2.44-3) ...
+#8 9.052 Selecting previously unselected package binutils-common:arm64.
+#8 9.053 Preparing to unpack .../01-binutils-common_2.44-3_arm64.deb ...
+#8 9.054 Unpacking binutils-common:arm64 (2.44-3) ...
+#8 9.154 Selecting previously unselected package libbinutils:arm64.
+#8 9.154 Preparing to unpack .../02-libbinutils_2.44-3_arm64.deb ...
+#8 9.155 Unpacking libbinutils:arm64 (2.44-3) ...
+#8 9.188 Selecting previously unselected package libgprofng0:arm64.
+#8 9.188 Preparing to unpack .../03-libgprofng0_2.44-3_arm64.deb ...
+#8 9.189 Unpacking libgprofng0:arm64 (2.44-3) ...
+#8 9.220 Selecting previously unselected package libctf-nobfd0:arm64.
+#8 9.221 Preparing to unpack .../04-libctf-nobfd0_2.44-3_arm64.deb ...
+#8 9.221 Unpacking libctf-nobfd0:arm64 (2.44-3) ...
+#8 9.233 Selecting previously unselected package libctf0:arm64.
+#8 9.234 Preparing to unpack .../05-libctf0_2.44-3_arm64.deb ...
+#8 9.234 Unpacking libctf0:arm64 (2.44-3) ...
+#8 9.244 Selecting previously unselected package libjansson4:arm64.
+#8 9.244 Preparing to unpack .../06-libjansson4_2.14-2+b3_arm64.deb ...
+#8 9.245 Unpacking libjansson4:arm64 (2.14-2+b3) ...
+#8 9.252 Selecting previously unselected package binutils-aarch64-linux-gnu.
+#8 9.252 Preparing to unpack .../07-binutils-aarch64-linux-gnu_2.44-3_arm64.deb ...
+#8 9.253 Unpacking binutils-aarch64-linux-gnu (2.44-3) ...
+#8 9.309 Selecting previously unselected package binutils.
+#8 9.310 Preparing to unpack .../08-binutils_2.44-3_arm64.deb ...
+#8 9.311 Unpacking binutils (2.44-3) ...
+#8 9.329 Selecting previously unselected package libisl23:arm64.
+#8 9.330 Preparing to unpack .../09-libisl23_0.27-1_arm64.deb ...
+#8 9.330 Unpacking libisl23:arm64 (0.27-1) ...
+#8 9.364 Selecting previously unselected package libmpfr6:arm64.
+#8 9.365 Preparing to unpack .../10-libmpfr6_4.2.2-1_arm64.deb ...
+#8 9.365 Unpacking libmpfr6:arm64 (4.2.2-1) ...
+#8 9.383 Selecting previously unselected package libmpc3:arm64.
+#8 9.383 Preparing to unpack .../11-libmpc3_1.3.1-1+b3_arm64.deb ...
+#8 9.384 Unpacking libmpc3:arm64 (1.3.1-1+b3) ...
+#8 9.391 Selecting previously unselected package cpp-14-aarch64-linux-gnu.
+#8 9.392 Preparing to unpack .../12-cpp-14-aarch64-linux-gnu_14.2.0-19_arm64.deb ...
+#8 9.393 Unpacking cpp-14-aarch64-linux-gnu (14.2.0-19) ...
+#8 9.656 Selecting previously unselected package cpp-14.
+#8 9.657 Preparing to unpack .../13-cpp-14_14.2.0-19_arm64.deb ...
+#8 9.658 Unpacking cpp-14 (14.2.0-19) ...
+#8 9.664 Selecting previously unselected package cpp-aarch64-linux-gnu.
+#8 9.664 Preparing to unpack .../14-cpp-aarch64-linux-gnu_4%3a14.2.0-1_arm64.deb ...
+#8 9.665 Unpacking cpp-aarch64-linux-gnu (4:14.2.0-1) ...
+#8 9.672 Selecting previously unselected package cpp.
+#8 9.672 Preparing to unpack .../15-cpp_4%3a14.2.0-1_arm64.deb ...
+#8 9.674 Unpacking cpp (4:14.2.0-1) ...
+#8 9.681 Selecting previously unselected package libcc1-0:arm64.
+#8 9.681 Preparing to unpack .../16-libcc1-0_14.2.0-19_arm64.deb ...
+#8 9.682 Unpacking libcc1-0:arm64 (14.2.0-19) ...
+#8 9.690 Selecting previously unselected package libgomp1:arm64.
+#8 9.691 Preparing to unpack .../17-libgomp1_14.2.0-19_arm64.deb ...
+#8 9.691 Unpacking libgomp1:arm64 (14.2.0-19) ...
+#8 9.707 Selecting previously unselected package libitm1:arm64.
+#8 9.707 Preparing to unpack .../18-libitm1_14.2.0-19_arm64.deb ...
+#8 9.708 Unpacking libitm1:arm64 (14.2.0-19) ...
+#8 9.715 Selecting previously unselected package libatomic1:arm64.
+#8 9.715 Preparing to unpack .../19-libatomic1_14.2.0-19_arm64.deb ...
+#8 9.716 Unpacking libatomic1:arm64 (14.2.0-19) ...
+#8 9.723 Selecting previously unselected package libasan8:arm64.
+#8 9.724 Preparing to unpack .../20-libasan8_14.2.0-19_arm64.deb ...
+#8 9.724 Unpacking libasan8:arm64 (14.2.0-19) ...
+#8 9.822 Selecting previously unselected package liblsan0:arm64.
+#8 9.823 Preparing to unpack .../21-liblsan0_14.2.0-19_arm64.deb ...
+#8 9.824 Unpacking liblsan0:arm64 (14.2.0-19) ...
+#8 9.873 Selecting previously unselected package libtsan2:arm64.
+#8 9.873 Preparing to unpack .../22-libtsan2_14.2.0-19_arm64.deb ...
+#8 9.874 Unpacking libtsan2:arm64 (14.2.0-19) ...
+#8 9.964 Selecting previously unselected package libubsan1:arm64.
+#8 9.965 Preparing to unpack .../23-libubsan1_14.2.0-19_arm64.deb ...
+#8 9.966 Unpacking libubsan1:arm64 (14.2.0-19) ...
+#8 10.01 Selecting previously unselected package libhwasan0:arm64.
+#8 10.01 Preparing to unpack .../24-libhwasan0_14.2.0-19_arm64.deb ...
+#8 10.01 Unpacking libhwasan0:arm64 (14.2.0-19) ...
+#8 10.07 Selecting previously unselected package libgcc-14-dev:arm64.
+#8 10.07 Preparing to unpack .../25-libgcc-14-dev_14.2.0-19_arm64.deb ...
+#8 10.07 Unpacking libgcc-14-dev:arm64 (14.2.0-19) ...
+#8 10.16 Selecting previously unselected package gcc-14-aarch64-linux-gnu.
+#8 10.16 Preparing to unpack .../26-gcc-14-aarch64-linux-gnu_14.2.0-19_arm64.deb ...
+#8 10.16 Unpacking gcc-14-aarch64-linux-gnu (14.2.0-19) ...
+#8 10.49 Selecting previously unselected package gcc-14.
+#8 10.49 Preparing to unpack .../27-gcc-14_14.2.0-19_arm64.deb ...
+#8 10.49 Unpacking gcc-14 (14.2.0-19) ...
+#8 10.50 Selecting previously unselected package gcc-aarch64-linux-gnu.
+#8 10.50 Preparing to unpack .../28-gcc-aarch64-linux-gnu_4%3a14.2.0-1_arm64.deb ...
+#8 10.50 Unpacking gcc-aarch64-linux-gnu (4:14.2.0-1) ...
+#8 10.51 Selecting previously unselected package gcc.
+#8 10.51 Preparing to unpack .../29-gcc_4%3a14.2.0-1_arm64.deb ...
+#8 10.51 Unpacking gcc (4:14.2.0-1) ...
+#8 10.52 Selecting previously unselected package libc-dev-bin.
+#8 10.52 Preparing to unpack .../30-libc-dev-bin_2.41-12+deb13u4_arm64.deb ...
+#8 10.52 Unpacking libc-dev-bin (2.41-12+deb13u4) ...
+#8 10.53 Selecting previously unselected package linux-libc-dev.
+#8 10.53 Preparing to unpack .../31-linux-libc-dev_6.12.111-1_all.deb ...
+#8 10.53 Unpacking linux-libc-dev (6.12.111-1) ...
+#8 10.62 Selecting previously unselected package libcrypt-dev:arm64.
+#8 10.62 Preparing to unpack .../32-libcrypt-dev_1%3a4.4.38-1_arm64.deb ...
+#8 10.62 Unpacking libcrypt-dev:arm64 (1:4.4.38-1) ...
+#8 10.63 Selecting previously unselected package rpcsvc-proto.
+#8 10.63 Preparing to unpack .../33-rpcsvc-proto_1.4.3-1+b1_arm64.deb ...
+#8 10.63 Unpacking rpcsvc-proto (1.4.3-1+b1) ...
+#8 10.64 Selecting previously unselected package libc6-dev:arm64.
+#8 10.64 Preparing to unpack .../34-libc6-dev_2.41-12+deb13u4_arm64.deb ...
+#8 10.64 Unpacking libc6-dev:arm64 (2.41-12+deb13u4) ...
+#8 10.71 Selecting previously unselected package libstdc++-14-dev:arm64.
+#8 10.71 Preparing to unpack .../35-libstdc++-14-dev_14.2.0-19_arm64.deb ...
+#8 10.71 Unpacking libstdc++-14-dev:arm64 (14.2.0-19) ...
+#8 10.82 Selecting previously unselected package g++-14-aarch64-linux-gnu.
+#8 10.82 Preparing to unpack .../36-g++-14-aarch64-linux-gnu_14.2.0-19_arm64.deb ...
+#8 10.82 Unpacking g++-14-aarch64-linux-gnu (14.2.0-19) ...
+#8 11.11 Selecting previously unselected package g++-14.
+#8 11.11 Preparing to unpack .../37-g++-14_14.2.0-19_arm64.deb ...
+#8 11.11 Unpacking g++-14 (14.2.0-19) ...
+#8 11.12 Selecting previously unselected package g++-aarch64-linux-gnu.
+#8 11.12 Preparing to unpack .../38-g++-aarch64-linux-gnu_4%3a14.2.0-1_arm64.deb ...
+#8 11.12 Unpacking g++-aarch64-linux-gnu (4:14.2.0-1) ...
+#8 11.12 Selecting previously unselected package g++.
+#8 11.12 Preparing to unpack .../39-g++_4%3a14.2.0-1_arm64.deb ...
+#8 11.12 Unpacking g++ (4:14.2.0-1) ...
+#8 11.13 Setting up binutils-common:arm64 (2.44-3) ...
+#8 11.13 Setting up linux-libc-dev (6.12.111-1) ...
+#8 11.14 Setting up libctf-nobfd0:arm64 (2.44-3) ...
+#8 11.14 Setting up libgomp1:arm64 (14.2.0-19) ...
+#8 11.14 Setting up libsframe1:arm64 (2.44-3) ...
+#8 11.14 Setting up libjansson4:arm64 (2.14-2+b3) ...
+#8 11.14 Setting up rpcsvc-proto (1.4.3-1+b1) ...
+#8 11.15 Setting up libmpfr6:arm64 (4.2.2-1) ...
+#8 11.15 Setting up libmpc3:arm64 (1.3.1-1+b3) ...
+#8 11.15 Setting up libatomic1:arm64 (14.2.0-19) ...
+#8 11.15 Setting up libubsan1:arm64 (14.2.0-19) ...
+#8 11.15 Setting up libhwasan0:arm64 (14.2.0-19) ...
+#8 11.16 Setting up libcrypt-dev:arm64 (1:4.4.38-1) ...
+#8 11.16 Setting up libasan8:arm64 (14.2.0-19) ...
+#8 11.16 Setting up libtsan2:arm64 (14.2.0-19) ...
+#8 11.16 Setting up libbinutils:arm64 (2.44-3) ...
+#8 11.16 Setting up libisl23:arm64 (0.27-1) ...
+#8 11.17 Setting up libc-dev-bin (2.41-12+deb13u4) ...
+#8 11.17 Setting up libcc1-0:arm64 (14.2.0-19) ...
+#8 11.17 Setting up liblsan0:arm64 (14.2.0-19) ...
+#8 11.17 Setting up libitm1:arm64 (14.2.0-19) ...
+#8 11.17 Setting up libctf0:arm64 (2.44-3) ...
+#8 11.18 Setting up binutils-aarch64-linux-gnu (2.44-3) ...
+#8 11.18 Setting up libgprofng0:arm64 (2.44-3) ...
+#8 11.18 Setting up cpp-14-aarch64-linux-gnu (14.2.0-19) ...
+#8 11.18 Setting up libc6-dev:arm64 (2.41-12+deb13u4) ...
+#8 11.18 Setting up libgcc-14-dev:arm64 (14.2.0-19) ...
+#8 11.19 Setting up libstdc++-14-dev:arm64 (14.2.0-19) ...
+#8 11.19 Setting up binutils (2.44-3) ...
+#8 11.19 Setting up cpp-aarch64-linux-gnu (4:14.2.0-1) ...
+#8 11.19 Setting up cpp-14 (14.2.0-19) ...
+#8 11.19 Setting up cpp (4:14.2.0-1) ...
+#8 11.20 Setting up gcc-14-aarch64-linux-gnu (14.2.0-19) ...
+#8 11.20 Setting up gcc-aarch64-linux-gnu (4:14.2.0-1) ...
+#8 11.20 Setting up g++-14-aarch64-linux-gnu (14.2.0-19) ...
+#8 11.21 Setting up gcc-14 (14.2.0-19) ...
+#8 11.21 Setting up g++-aarch64-linux-gnu (4:14.2.0-1) ...
+#8 11.21 Setting up g++-14 (14.2.0-19) ...
+#8 11.21 Setting up gcc (4:14.2.0-1) ...
+#8 11.21 Setting up g++ (4:14.2.0-1) ...
+#8 11.22 update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+#8 11.22 Processing triggers for libc-bin (2.41-12+deb13u4) ...
+#8 12.22 Collecting numpy==1.26.2 (from -r requirements-build.txt (line 1))
+#8 12.38   Downloading numpy-1.26.2-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+#8 12.43      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.7/62.7 kB 1.0 MB/s eta 0:00:00
+#8 12.57 Collecting setuptools==69.5.1 (from -r requirements-build.txt (line 2))
+#8 12.61   Downloading setuptools-69.5.1-py3-none-any.whl.metadata (6.2 kB)
+#8 12.67 Collecting wheel==0.43.0 (from -r requirements-build.txt (line 3))
+#8 12.72   Downloading wheel-0.43.0-py3-none-any.whl.metadata (2.2 kB)
+#8 12.91 Collecting Cython==3.0.12 (from -r requirements-build.txt (line 4))
+#8 12.96   Downloading Cython-3.0.12-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.3 kB)
+#8 13.02 Downloading numpy-1.26.2-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (14.2 MB)
+#8 14.33    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.2/14.2 MB 12.4 MB/s eta 0:00:00
+#8 14.38 Downloading setuptools-69.5.1-py3-none-any.whl (894 kB)
+#8 14.45    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 894.6/894.6 kB 11.9 MB/s eta 0:00:00
+#8 14.50 Downloading wheel-0.43.0-py3-none-any.whl (65 kB)
+#8 14.51    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.8/65.8 kB 11.6 MB/s eta 0:00:00
+#8 14.83 Downloading Cython-3.0.12-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (3.4 MB)
+#8 15.12    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 11.7 MB/s eta 0:00:00
+#8 15.19 Installing collected packages: wheel, setuptools, numpy, Cython
+#8 15.19   Attempting uninstall: wheel
+#8 15.19     Found existing installation: wheel 0.46.3
+#8 15.20     Uninstalling wheel-0.46.3:
+#8 15.20       Successfully uninstalled wheel-0.46.3
+#8 15.22   Attempting uninstall: setuptools
+#8 15.22     Found existing installation: setuptools 79.0.1
+#8 15.23     Uninstalling setuptools-79.0.1:
+#8 15.26       Successfully uninstalled setuptools-79.0.1
+#8 16.31 Successfully installed Cython-3.0.12 numpy-1.26.2 setuptools-69.5.1 wheel-0.43.0
+#8 16.31 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#8 16.48
+#8 16.48 [notice] A new release of pip is available: 24.0 -> 26.2.1
+#8 16.48 [notice] To update, run: pip install --upgrade pip
+#8 17.49 Collecting fastapi==0.104.1 (from -r requirements.txt (line 2))
+#8 17.64   Downloading fastapi-0.104.1-py3-none-any.whl.metadata (24 kB)
+#8 17.79 Collecting uvicorn==0.24.0 (from -r requirements.txt (line 3))
+#8 17.84   Downloading uvicorn-0.24.0-py3-none-any.whl.metadata (6.4 kB)
+#8 18.45 Collecting pandas==2.1.3 (from -r requirements.txt (line 6))
+#8 18.50   Downloading pandas-2.1.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (18 kB)
+#8 18.51 Requirement already satisfied: numpy==1.26.2 in /usr/local/lib/python3.11/site-packages (from -r requirements.txt (line 7)) (1.26.2)
+#8 18.84 Collecting scikit-learn==1.3.2 (from -r requirements.txt (line 10))
+#8 18.89   Downloading scikit_learn-1.3.2-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (11 kB)
+#8 18.95 Collecting scikit-surprise==1.1.3 (from -r requirements.txt (line 11))
+#8 19.00   Downloading scikit-surprise-1.1.3.tar.gz (771 kB)
+#8 19.17      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 772.0/772.0 kB 4.6 MB/s eta 0:00:00
+#8 19.20   Preparing metadata (setup.py): started
+#8 20.40   Preparing metadata (setup.py): finished with status 'done'
+#8 20.81 Collecting pydantic==2.5.2 (from -r requirements.txt (line 14))
+#8 20.86   Downloading pydantic-2.5.2-py3-none-any.whl.metadata (65 kB)
+#8 20.87      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.2/65.2 kB 18.2 MB/s eta 0:00:00
+#8 20.96 Collecting python-dotenv==1.0.0 (from -r requirements.txt (line 17))
+#8 21.01   Downloading python_dotenv-1.0.0-py3-none-any.whl.metadata (21 kB)
+#8 21.10 Collecting anyio<4.0.0,>=3.7.1 (from fastapi==0.104.1->-r requirements.txt (line 2))
+#8 21.15   Downloading anyio-3.7.1-py3-none-any.whl.metadata (4.7 kB)
+#8 21.29 Collecting starlette<0.28.0,>=0.27.0 (from fastapi==0.104.1->-r requirements.txt (line 2))
+#8 21.34   Downloading starlette-0.27.0-py3-none-any.whl.metadata (5.8 kB)
+#8 21.42 Collecting typing-extensions>=4.8.0 (from fastapi==0.104.1->-r requirements.txt (line 2))
+#8 21.47   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+#8 21.55 Collecting click>=7.0 (from uvicorn==0.24.0->-r requirements.txt (line 3))
+#8 21.60   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+#8 21.66 Collecting h11>=0.8 (from uvicorn==0.24.0->-r requirements.txt (line 3))
+#8 21.70   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+#8 21.79 Collecting python-dateutil>=2.8.2 (from pandas==2.1.3->-r requirements.txt (line 6))
+#8 21.84   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+#8 22.03 Collecting pytz>=2020.1 (from pandas==2.1.3->-r requirements.txt (line 6))
+#8 22.08   Downloading pytz-2026.4-py2.py3-none-any.whl.metadata (22 kB)
+#8 22.15 Collecting tzdata>=2022.1 (from pandas==2.1.3->-r requirements.txt (line 6))
+#8 22.19   Downloading tzdata-2026.4-py2.py3-none-any.whl.metadata (1.4 kB)
+#8 22.75 Collecting scipy>=1.5.0 (from scikit-learn==1.3.2->-r requirements.txt (line 10))
+#8 22.80   Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (62 kB)
+#8 22.80      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.1/62.1 kB 10.4 MB/s eta 0:00:00
+#8 22.89 Collecting joblib>=1.1.1 (from scikit-learn==1.3.2->-r requirements.txt (line 10))
+#8 22.94   Downloading joblib-1.6.0-py3-none-any.whl.metadata (6.5 kB)
+#8 23.01 Collecting threadpoolctl>=2.0.0 (from scikit-learn==1.3.2->-r requirements.txt (line 10))
+#8 23.07   Downloading threadpoolctl-3.7.0-py3-none-any.whl.metadata (24 kB)
+#8 23.14 Collecting annotated-types>=0.4.0 (from pydantic==2.5.2->-r requirements.txt (line 14))
+#8 23.19   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+#8 24.93 Collecting pydantic-core==2.14.5 (from pydantic==2.5.2->-r requirements.txt (line 14))
+#8 24.98   Downloading pydantic_core-2.14.5-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.5 kB)
+#8 25.07 Collecting idna>=2.8 (from anyio<4.0.0,>=3.7.1->fastapi==0.104.1->-r requirements.txt (line 2))
+#8 25.12   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+#8 25.17 Collecting sniffio>=1.1 (from anyio<4.0.0,>=3.7.1->fastapi==0.104.1->-r requirements.txt (line 2))
+#8 25.21   Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+#8 25.28 Collecting cloudpickle>=3.0 (from joblib>=1.1.1->scikit-learn==1.3.2->-r requirements.txt (line 10))
+#8 25.33   Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+#8 25.39 Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas==2.1.3->-r requirements.txt (line 6))
+#8 25.44   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+#8 25.92 INFO: pip is looking at multiple versions of scipy to determine which version is compatible with other requirements. This could take a while.
+#8 25.92 Collecting scipy>=1.5.0 (from scikit-learn==1.3.2->-r requirements.txt (line 10))
+#8 25.97   Downloading scipy-1.17.0-cp311-cp311-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (62 kB)
+#8 25.97      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.1/62.1 kB 24.0 MB/s eta 0:00:00
+#8 26.03   Downloading scipy-1.16.3-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.whl.metadata (62 kB)
+#8 26.04      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.0/62.0 kB 11.8 MB/s eta 0:00:00
+#8 26.11 Downloading fastapi-0.104.1-py3-none-any.whl (92 kB)
+#8 26.12    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 92.9/92.9 kB 11.7 MB/s eta 0:00:00
+#8 26.18 Downloading uvicorn-0.24.0-py3-none-any.whl (59 kB)
+#8 26.19    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.6/59.6 kB 14.5 MB/s eta 0:00:00
+#8 26.24 Downloading pandas-2.1.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (14.8 MB)
+#8 27.52    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.8/14.8 MB 11.6 MB/s eta 0:00:00
+#8 27.57 Downloading scikit_learn-1.3.2-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (10.3 MB)
+#8 29.52    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.3/10.3 MB 5.4 MB/s eta 0:00:00
+#8 29.57 Downloading pydantic-2.5.2-py3-none-any.whl (381 kB)
+#8 29.63    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 381.9/381.9 kB 6.3 MB/s eta 0:00:00
+#8 29.69 Downloading python_dotenv-1.0.0-py3-none-any.whl (19 kB)
+#8 30.03 Downloading pydantic_core-2.14.5-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (1.8 MB)
+#8 30.35    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 5.6 MB/s eta 0:00:00
+#8 30.40 Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+#8 30.50 Downloading anyio-3.7.1-py3-none-any.whl (80 kB)
+#8 30.51    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.9/80.9 kB 66.6 MB/s eta 0:00:00
+#8 30.55 Downloading click-8.5.0-py3-none-any.whl (125 kB)
+#8 30.58    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 125.3/125.3 kB 5.1 MB/s eta 0:00:00
+#8 30.63 Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+#8 30.68 Downloading joblib-1.6.0-py3-none-any.whl (306 kB)
+#8 30.76    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 306.1/306.1 kB 4.1 MB/s eta 0:00:00
+#8 30.81 Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+#8 30.90    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 2.5 MB/s eta 0:00:00
+#8 30.96 Downloading pytz-2026.4-py2.py3-none-any.whl (506 kB)
+#8 31.13    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 506.7/506.7 kB 3.0 MB/s eta 0:00:00
+#8 31.19 Downloading scipy-1.16.3-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.whl (33.6 MB)
+#8 53.11    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 33.6/33.6 MB 1.3 MB/s eta 0:00:00
+#8 53.37 Downloading starlette-0.27.0-py3-none-any.whl (66 kB)
+#8 53.39    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.0/67.0 kB 3.7 MB/s eta 0:00:00
+#8 53.45 Downloading threadpoolctl-3.7.0-py3-none-any.whl (26 kB)
+#8 53.51 Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+#8 53.53    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 3.1 MB/s eta 0:00:00
+#8 53.58 Downloading tzdata-2026.4-py2.py3-none-any.whl (347 kB)
+#8 53.73    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 347.5/347.5 kB 2.4 MB/s eta 0:00:00
+#8 53.78 Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+#8 53.83 Downloading idna-3.20-py3-none-any.whl (69 kB)
+#8 53.86    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.6/69.6 kB 3.2 MB/s eta 0:00:00
+#8 53.91 Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+#8 53.96 Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+#8 54.03 Building wheels for collected packages: scikit-surprise
+#8 54.03   Building wheel for scikit-surprise (setup.py): started
+#8 72.98   Building wheel for scikit-surprise (setup.py): finished with status 'done'
+#8 72.98   Created wheel for scikit-surprise: filename=scikit_surprise-1.1.3-cp311-cp311-linux_aarch64.whl size=3864223 sha256=a4b75d19e3982b27c3451342fbfff4799f2cb4c2b84dd599a869be2c93e90b5c
+#8 72.98   Stored in directory: /tmp/pip-ephem-wheel-cache-30b4e2eu/wheels/f4/2b/26/e2a5eae55d3b7688995e66abe7f40473aac6c95ddd8ee174a8
+#8 72.98 Successfully built scikit-surprise
+#8 73.07 Installing collected packages: pytz, tzdata, typing-extensions, threadpoolctl, sniffio, six, scipy, python-dotenv, idna, h11, cloudpickle, click, annotated-types, uvicorn, python-dateutil, pydantic-core, joblib, anyio, starlette, scikit-surprise, scikit-learn, pydantic, pandas, fastapi
+#8 77.29 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#8 77.29 Successfully installed annotated-types-0.8.0 anyio-3.7.1 click-8.5.0 cloudpickle-3.1.2 fastapi-0.104.1 h11-0.16.0 idna-3.20 joblib-1.6.0 pandas-2.1.3 pydantic-2.5.2 pydantic-core-2.14.5 python-dateutil-2.9.0.post0 python-dotenv-1.0.0 pytz-2026.4 scikit-learn-1.3.2 scikit-surprise-1.1.3 scipy-1.16.3 six-1.17.0 sniffio-1.3.1 starlette-0.27.0 threadpoolctl-3.7.0 typing-extensions-4.16.0 tzdata-2026.4 uvicorn-0.24.0
+#8 77.51
+#8 77.51 [notice] A new release of pip is available: 24.0 -> 26.2.1
+#8 77.51 [notice] To update, run: pip install --upgrade pip
+#8 77.70 Reading package lists...
+#8 77.92 Building dependency tree...
+#8 77.99 Reading state information...
+#8 78.12 The following packages were automatically installed and are no longer required:
+#8 78.12   binutils binutils-aarch64-linux-gnu binutils-common cpp cpp-14
+#8 78.12   cpp-14-aarch64-linux-gnu cpp-aarch64-linux-gnu g++-14
+#8 78.12   g++-14-aarch64-linux-gnu g++-aarch64-linux-gnu gcc gcc-14
+#8 78.12   gcc-14-aarch64-linux-gnu gcc-aarch64-linux-gnu libasan8 libatomic1
+#8 78.12   libbinutils libc-dev-bin libc6-dev libcc1-0 libcrypt-dev libctf-nobfd0
+#8 78.12   libctf0 libgcc-14-dev libgomp1 libgprofng0 libhwasan0 libisl23 libitm1
+#8 78.12   libjansson4 liblsan0 libmpc3 libmpfr6 libsframe1 libstdc++-14-dev libtsan2
+#8 78.12   libubsan1 linux-libc-dev rpcsvc-proto
+#8 78.12 Use 'apt autoremove' to remove them.
+#8 78.13 The following packages will be REMOVED:
+#8 78.13   g++*
+#8 78.24 0 upgraded, 0 newly installed, 1 to remove and 1 not upgraded.
+#8 78.24 After this operation, 13.3 kB disk space will be freed.
+#8 78.24 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 10710 files and directories currently installed.)
+#8 78.24 Removing g++ (4:14.2.0-1) ...
+#8 78.27 Reading package lists...
+#8 78.55 Building dependency tree...
+#8 78.66 Reading state information...
+#8 78.79 The following packages will be REMOVED:
+#8 78.79   binutils binutils-aarch64-linux-gnu binutils-common cpp cpp-14
+#8 78.79   cpp-14-aarch64-linux-gnu cpp-aarch64-linux-gnu g++-14
+#8 78.79   g++-14-aarch64-linux-gnu g++-aarch64-linux-gnu gcc gcc-14
+#8 78.79   gcc-14-aarch64-linux-gnu gcc-aarch64-linux-gnu libasan8 libatomic1
+#8 78.79   libbinutils libc-dev-bin libc6-dev libcc1-0 libcrypt-dev libctf-nobfd0
+#8 78.79   libctf0 libgcc-14-dev libgomp1 libgprofng0 libhwasan0 libisl23 libitm1
+#8 78.79   libjansson4 liblsan0 libmpc3 libmpfr6 libsframe1 libstdc++-14-dev libtsan2
+#8 78.79   libubsan1 linux-libc-dev rpcsvc-proto
+#8 78.88 0 upgraded, 0 newly installed, 39 to remove and 1 not upgraded.
+#8 78.88 After this operation, 262 MB disk space will be freed.
+#8 78.88 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 10707 files and directories currently installed.)
+#8 78.88 Removing gcc (4:14.2.0-1) ...
+#8 78.89 Removing g++-14 (14.2.0-19) ...
+#8 78.90 Removing gcc-14 (14.2.0-19) ...
+#8 78.91 Removing binutils (2.44-3) ...
+#8 78.91 Removing g++-aarch64-linux-gnu (4:14.2.0-1) ...
+#8 78.92 Removing gcc-aarch64-linux-gnu (4:14.2.0-1) ...
+#8 78.93 Removing g++-14-aarch64-linux-gnu (14.2.0-19) ...
+#8 78.94 Removing gcc-14-aarch64-linux-gnu (14.2.0-19) ...
+#8 78.96 Removing binutils-aarch64-linux-gnu (2.44-3) ...
+#8 78.97 Removing libgprofng0:arm64 (2.44-3) ...
+#8 78.98 Removing libctf0:arm64 (2.44-3) ...
+#8 78.99 Removing libbinutils:arm64 (2.44-3) ...
+#8 79.00 Removing binutils-common:arm64 (2.44-3) ...
+#8 79.00 Removing cpp (4:14.2.0-1) ...
+#8 79.01 Removing cpp-14 (14.2.0-19) ...
+#8 79.02 Removing cpp-aarch64-linux-gnu (4:14.2.0-1) ...
+#8 79.03 Removing cpp-14-aarch64-linux-gnu (14.2.0-19) ...
+#8 79.04 Removing libstdc++-14-dev:arm64 (14.2.0-19) ...
+#8 79.06 Removing libgcc-14-dev:arm64 (14.2.0-19) ...
+#8 79.08 Removing libasan8:arm64 (14.2.0-19) ...
+#8 79.09 Removing libatomic1:arm64 (14.2.0-19) ...
+#8 79.10 Removing libc6-dev:arm64 (2.41-12+deb13u4) ...
+#8 79.12 Removing libc-dev-bin (2.41-12+deb13u4) ...
+#8 79.13 Removing libcc1-0:arm64 (14.2.0-19) ...
+#8 79.14 Removing libcrypt-dev:arm64 (1:4.4.38-1) ...
+#8 79.15 Removing libctf-nobfd0:arm64 (2.44-3) ...
+#8 79.16 Removing libgomp1:arm64 (14.2.0-19) ...
+#8 79.17 Removing libhwasan0:arm64 (14.2.0-19) ...
+#8 79.17 Removing libisl23:arm64 (0.27-1) ...
+#8 79.18 Removing libitm1:arm64 (14.2.0-19) ...
+#8 79.19 Removing libjansson4:arm64 (2.14-2+b3) ...
+#8 79.20 Removing liblsan0:arm64 (14.2.0-19) ...
+#8 79.21 Removing libmpc3:arm64 (1.3.1-1+b3) ...
+#8 79.22 Removing libmpfr6:arm64 (4.2.2-1) ...
+#8 79.22 Removing libsframe1:arm64 (2.44-3) ...
+#8 79.23 Removing libtsan2:arm64 (14.2.0-19) ...
+#8 79.24 Removing libubsan1:arm64 (14.2.0-19) ...
+#8 79.25 Removing linux-libc-dev (6.12.111-1) ...
+#8 79.30 Removing rpcsvc-proto (1.4.3-1+b1) ...
+#8 79.31 Processing triggers for libc-bin (2.41-12+deb13u4) ...
+#8 DONE 79.5s
+
+#9 [5/7] COPY app/ app/
+#9 DONE 0.1s
+
+#10 [6/7] COPY models/ models/
+#10 DONE 0.0s
+
+#11 [7/7] RUN useradd --create-home appuser
+#11 DONE 0.1s
+
+#12 exporting to image
+#12 exporting layers
+#12 exporting layers 5.9s done
+#12 exporting manifest sha256:be7e5b596c3469e0dbf61371380f6d02a101b33460e00138f1d66fe62e22a711 done
+#12 exporting config sha256:f3595318351cba04045ae22134f17af369b7cdfed611dfd56309ca7607e6e221 done
+#12 exporting attestation manifest sha256:3588e5a79f26a8bd79204cb0546265f145d3f41e252500edfc417be6fa556334 done
+#12 exporting manifest list sha256:6ac59d59bf23499e98f193ba06511fb6f92324d705cc83c6704e431c3ffb0cfc done
+#12 naming to docker.io/library/ddm501-lab3:verify done
+#12 unpacking to docker.io/library/ddm501-lab3:verify
+#12 unpacking to docker.io/library/ddm501-lab3:verify 1.2s done
+#12 DONE 7.2s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/fg0d2q6ltadxqjhk4wu4qg28z

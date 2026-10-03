@@ -1,0 +1,1372 @@
+quality	Set up job	﻿2026-10-03T07:01:07.6824543Z Current runner version: '2.337.0'
+quality	Set up job	2026-10-03T07:01:07.6904611Z ##[group]Runner Image Provisioner
+quality	Set up job	2026-10-03T07:01:07.6906032Z Hosted Compute Agent
+quality	Set up job	2026-10-03T07:01:07.6907061Z Version: 20260901.588
+quality	Set up job	2026-10-03T07:01:07.6908303Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+quality	Set up job	2026-10-03T07:01:07.6909578Z Build Date: 2026-09-01T19:56:44Z
+quality	Set up job	2026-10-03T07:01:07.6931400Z Worker ID: {07389d2a-84be-4504-ba0e-20765d6aafd1}
+quality	Set up job	2026-10-03T07:01:07.6932689Z Azure Region: eastus
+quality	Set up job	2026-10-03T07:01:07.6933997Z ##[endgroup]
+quality	Set up job	2026-10-03T07:01:07.6936761Z ##[group]Operating System
+quality	Set up job	2026-10-03T07:01:07.6937911Z Ubuntu
+quality	Set up job	2026-10-03T07:01:07.6938912Z 24.04.5
+quality	Set up job	2026-10-03T07:01:07.6939773Z LTS
+quality	Set up job	2026-10-03T07:01:07.6941484Z ##[endgroup]
+quality	Set up job	2026-10-03T07:01:07.6942687Z ##[group]Runner Image
+quality	Set up job	2026-10-03T07:01:07.6943703Z Image: ubuntu-24.04
+quality	Set up job	2026-10-03T07:01:07.6944745Z Version: 20260927.320.1
+quality	Set up job	2026-10-03T07:01:07.6946618Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+quality	Set up job	2026-10-03T07:01:07.6949932Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+quality	Set up job	2026-10-03T07:01:07.6972154Z ##[endgroup]
+quality	Set up job	2026-10-03T07:01:07.6974380Z ##[group]GITHUB_TOKEN Permissions
+quality	Set up job	2026-10-03T07:01:07.6977633Z Contents: read
+quality	Set up job	2026-10-03T07:01:07.6978842Z Metadata: read
+quality	Set up job	2026-10-03T07:01:07.6979851Z ##[endgroup]
+quality	Set up job	2026-10-03T07:01:07.7003520Z Secret source: Actions
+quality	Set up job	2026-10-03T07:01:07.7005065Z Cache mode: write
+quality	Set up job	2026-10-03T07:01:07.7006933Z Prepare workflow directory
+quality	Set up job	2026-10-03T07:01:07.7686941Z Prepare all required actions
+quality	Set up job	2026-10-03T07:01:07.7758592Z Getting action download info
+quality	Set up job	2026-10-03T07:01:08.0104938Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+quality	Set up job	2026-10-03T07:01:08.6899736Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+quality	Set up job	2026-10-03T07:01:09.3016029Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+quality	Set up job	2026-10-03T07:01:09.5778197Z Complete job name: quality
+quality	Run actions/checkout@v4	﻿2026-10-03T07:01:09.6770819Z ##[group]Run actions/checkout@v4
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.6772334Z with:
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.6773363Z   repository: thanhhai12/ddm501-lab3-testing-cicd
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.6782316Z   token: ***
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.6783202Z   ssh-strict: true
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.6784106Z   ssh-user: git
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.6785032Z   persist-credentials: true
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.6786040Z   clean: true
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.6786951Z   sparse-checkout-cone-mode: true
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.6788049Z   fetch-depth: 1
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.6788928Z   fetch-tags: false
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.6789846Z   show-progress: true
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.6791197Z   lfs: false
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.6792085Z   submodules: false
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.6793028Z   set-safe-directory: true
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.6794089Z   allow-unsafe-pr-checkout: false
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.6795478Z ##[endgroup]
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8025878Z Syncing repository: thanhhai12/ddm501-lab3-testing-cicd
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8031952Z ##[group]Getting Git version info
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8037185Z Working directory is '/home/runner/work/ddm501-lab3-testing-cicd/ddm501-lab3-testing-cicd'
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8041956Z [command]/usr/bin/git version
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8311449Z git version 2.55.0
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8374751Z ##[endgroup]
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8387055Z Temporarily overriding HOME='/home/runner/work/_temp/70297f27-6eac-445a-aec2-a57d4ec4b0d6' before making global git config changes
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8393098Z Adding repository directory to the temporary git global config as a safe directory
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8398220Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ddm501-lab3-testing-cicd/ddm501-lab3-testing-cicd
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8483853Z Deleting the contents of '/home/runner/work/ddm501-lab3-testing-cicd/ddm501-lab3-testing-cicd'
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8488952Z ##[group]Initializing the repository
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8492714Z [command]/usr/bin/git init /home/runner/work/ddm501-lab3-testing-cicd/ddm501-lab3-testing-cicd
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8609862Z hint: Using 'master' as the name for the initial branch. This default branch name
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8706695Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8733098Z hint: to use in all of your new repositories, which will suppress this warning,
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8842579Z hint: call:
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8844022Z hint:
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8845760Z hint: 	git config --global init.defaultBranch <name>
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8848078Z hint:
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8849668Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8852360Z hint: 'development'. The just-created branch can be renamed via this command:
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8854278Z hint:
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8855480Z hint: 	git branch -m <name>
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8856814Z hint:
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8858463Z hint: Disable this message with "git config set advice.defaultBranchName false"
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8862474Z Initialized empty Git repository in /home/runner/work/ddm501-lab3-testing-cicd/ddm501-lab3-testing-cicd/.git/
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8888981Z [command]/usr/bin/git remote add origin https://github.com/thanhhai12/ddm501-lab3-testing-cicd
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8898266Z ##[endgroup]
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8901520Z ##[group]Disabling automatic garbage collection
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8904804Z [command]/usr/bin/git config --local gc.auto 0
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8911980Z ##[endgroup]
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8915094Z ##[group]Setting up auth
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8917861Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.8929845Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.9354542Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.9400410Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.9644069Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.9686131Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.9928928Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.9975053Z ##[endgroup]
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.9978538Z ##[group]Fetching the repository
+quality	Run actions/checkout@v4	2026-10-03T07:01:09.9988864Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +84708ebf48411e0740d43245c4e01114c209e53c:refs/remotes/origin/main
+quality	Run actions/checkout@v4	2026-10-03T07:01:10.3223913Z From https://github.com/thanhhai12/ddm501-lab3-testing-cicd
+quality	Run actions/checkout@v4	2026-10-03T07:01:10.3225089Z  * [new ref]         84708ebf48411e0740d43245c4e01114c209e53c -> origin/main
+quality	Run actions/checkout@v4	2026-10-03T07:01:10.3228445Z ##[endgroup]
+quality	Run actions/checkout@v4	2026-10-03T07:01:10.3230293Z ##[group]Determining the checkout info
+quality	Run actions/checkout@v4	2026-10-03T07:01:10.3232165Z ##[endgroup]
+quality	Run actions/checkout@v4	2026-10-03T07:01:10.3233463Z [command]/usr/bin/git sparse-checkout disable
+quality	Run actions/checkout@v4	2026-10-03T07:01:10.3252108Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+quality	Run actions/checkout@v4	2026-10-03T07:01:10.3291784Z ##[group]Checking out the ref
+quality	Run actions/checkout@v4	2026-10-03T07:01:10.3296952Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+quality	Run actions/checkout@v4	2026-10-03T07:01:10.3497113Z Switched to a new branch 'main'
+quality	Run actions/checkout@v4	2026-10-03T07:01:10.3505611Z branch 'main' set up to track 'origin/main'.
+quality	Run actions/checkout@v4	2026-10-03T07:01:10.3511889Z ##[endgroup]
+quality	Run actions/checkout@v4	2026-10-03T07:01:10.3558541Z [command]/usr/bin/git log -1 --format=%H
+quality	Run actions/checkout@v4	2026-10-03T07:01:10.3591151Z 84708ebf48411e0740d43245c4e01114c209e53c
+quality	Run actions/setup-python@v5	﻿2026-10-03T07:01:10.3887713Z ##[group]Run actions/setup-python@v5
+quality	Run actions/setup-python@v5	2026-10-03T07:01:10.3888054Z with:
+quality	Run actions/setup-python@v5	2026-10-03T07:01:10.3888260Z   python-version: 3.11
+quality	Run actions/setup-python@v5	2026-10-03T07:01:10.3888670Z   cache: pip
+quality	Run actions/setup-python@v5	2026-10-03T07:01:10.3888875Z   check-latest: false
+quality	Run actions/setup-python@v5	2026-10-03T07:01:10.3891526Z   token: ***
+quality	Run actions/setup-python@v5	2026-10-03T07:01:10.3891742Z   update-environment: true
+quality	Run actions/setup-python@v5	2026-10-03T07:01:10.3891988Z   allow-prereleases: false
+quality	Run actions/setup-python@v5	2026-10-03T07:01:10.3892235Z   freethreaded: false
+quality	Run actions/setup-python@v5	2026-10-03T07:01:10.3956716Z ##[endgroup]
+quality	Run actions/setup-python@v5	2026-10-03T07:01:10.5474304Z ##[group]Installed versions
+quality	Run actions/setup-python@v5	2026-10-03T07:01:10.5567279Z (node:2054) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+quality	Run actions/setup-python@v5	2026-10-03T07:01:10.5569310Z (Use `node --trace-deprecation ...` to show where the warning was created)
+quality	Run actions/setup-python@v5	2026-10-03T07:01:10.5570188Z Successfully set up CPython (3.11.16)
+quality	Run actions/setup-python@v5	2026-10-03T07:01:10.5572638Z ##[endgroup]
+quality	Run actions/setup-python@v5	2026-10-03T07:01:10.7417075Z [command]/opt/hostedtoolcache/Python/3.11.16/x64/bin/pip cache dir
+quality	Run actions/setup-python@v5	2026-10-03T07:01:12.4162355Z /home/runner/.cache/pip
+quality	Run actions/setup-python@v5	2026-10-03T07:01:12.4953855Z pip cache is not found
+quality	Install pinned dependencies	﻿2026-10-03T07:01:12.5105901Z ##[group]Run python -m pip install -r requirements-build.txt
+quality	Install pinned dependencies	2026-10-03T07:01:12.5106473Z ^[[36;1mpython -m pip install -r requirements-build.txt^[[0m
+quality	Install pinned dependencies	2026-10-03T07:01:12.5106997Z ^[[36;1mpip install --no-build-isolation -r requirements.txt -r requirements-dev.txt^[[0m
+quality	Install pinned dependencies	2026-10-03T07:01:12.5377823Z shell: /usr/bin/bash -e {0}
+quality	Install pinned dependencies	2026-10-03T07:01:12.5378156Z env:
+quality	Install pinned dependencies	2026-10-03T07:01:12.5378458Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.16/x64
+quality	Install pinned dependencies	2026-10-03T07:01:12.5378953Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib/pkgconfig
+quality	Install pinned dependencies	2026-10-03T07:01:12.5379438Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+quality	Install pinned dependencies	2026-10-03T07:01:12.5379865Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+quality	Install pinned dependencies	2026-10-03T07:01:12.5380312Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+quality	Install pinned dependencies	2026-10-03T07:01:12.5380963Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib
+quality	Install pinned dependencies	2026-10-03T07:01:12.5381338Z ##[endgroup]
+quality	Install pinned dependencies	2026-10-03T07:01:14.3158534Z Collecting numpy==1.26.2 (from -r requirements-build.txt (line 1))
+quality	Install pinned dependencies	2026-10-03T07:01:14.3723705Z   Downloading numpy-1.26.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:14.4649661Z Collecting setuptools==69.5.1 (from -r requirements-build.txt (line 2))
+quality	Install pinned dependencies	2026-10-03T07:01:14.4703950Z   Downloading setuptools-69.5.1-py3-none-any.whl.metadata (6.2 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:14.4907244Z Collecting wheel==0.43.0 (from -r requirements-build.txt (line 3))
+quality	Install pinned dependencies	2026-10-03T07:01:14.4948906Z   Downloading wheel-0.43.0-py3-none-any.whl.metadata (2.2 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:14.7110165Z Collecting Cython==3.0.12 (from -r requirements-build.txt (line 4))
+quality	Install pinned dependencies	2026-10-03T07:01:14.7161446Z   Downloading Cython-3.0.12-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.3 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:14.7296414Z Downloading numpy-1.26.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.2 MB)
+quality	Install pinned dependencies	2026-10-03T07:01:14.8522611Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.2/18.2 MB 158.5 MB/s  0:00:00
+quality	Install pinned dependencies	2026-10-03T07:01:14.8568243Z Downloading setuptools-69.5.1-py3-none-any.whl (894 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:14.8734806Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 894.6/894.6 kB 53.3 MB/s  0:00:00
+quality	Install pinned dependencies	2026-10-03T07:01:14.8771379Z Downloading wheel-0.43.0-py3-none-any.whl (65 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:14.8863916Z Downloading Cython-3.0.12-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.6 MB)
+quality	Install pinned dependencies	2026-10-03T07:01:14.9132042Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.6/3.6 MB 138.0 MB/s  0:00:00
+quality	Install pinned dependencies	2026-10-03T07:01:15.0985188Z Installing collected packages: wheel, setuptools, numpy, Cython
+quality	Install pinned dependencies	2026-10-03T07:01:15.1437065Z   Attempting uninstall: setuptools
+quality	Install pinned dependencies	2026-10-03T07:01:15.1451583Z     Found existing installation: setuptools 79.0.1
+quality	Install pinned dependencies	2026-10-03T07:01:15.2922765Z     Uninstalling setuptools-79.0.1:
+quality	Install pinned dependencies	2026-10-03T07:01:15.3225936Z       Successfully uninstalled setuptools-79.0.1
+quality	Install pinned dependencies	2026-10-03T07:01:18.3352753Z
+quality	Install pinned dependencies	2026-10-03T07:01:18.3371500Z Successfully installed Cython-3.0.12 numpy-1.26.2 setuptools-69.5.1 wheel-0.43.0
+quality	Install pinned dependencies	2026-10-03T07:01:19.2837808Z Collecting fastapi==0.104.1 (from -r requirements.txt (line 2))
+quality	Install pinned dependencies	2026-10-03T07:01:19.3321768Z   Downloading fastapi-0.104.1-py3-none-any.whl.metadata (24 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:19.3628862Z Collecting uvicorn==0.24.0 (from -r requirements.txt (line 3))
+quality	Install pinned dependencies	2026-10-03T07:01:19.3767343Z   Downloading uvicorn-0.24.0-py3-none-any.whl.metadata (6.4 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:19.4878541Z Collecting pandas==2.1.3 (from -r requirements.txt (line 6))
+quality	Install pinned dependencies	2026-10-03T07:01:19.4921190Z   Downloading pandas-2.1.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (18 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:19.5072201Z Requirement already satisfied: numpy==1.26.2 in /opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages (from -r requirements.txt (line 7)) (1.26.2)
+quality	Install pinned dependencies	2026-10-03T07:01:19.5786521Z Collecting scikit-learn==1.3.2 (from -r requirements.txt (line 10))
+quality	Install pinned dependencies	2026-10-03T07:01:19.5833426Z   Downloading scikit_learn-1.3.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:19.5991569Z Collecting scikit-surprise==1.1.3 (from -r requirements.txt (line 11))
+quality	Install pinned dependencies	2026-10-03T07:01:19.6035962Z   Downloading scikit-surprise-1.1.3.tar.gz (771 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:19.6291382Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 772.0/772.0 kB 61.9 MB/s  0:00:00
+quality	Install pinned dependencies	2026-10-03T07:01:19.6829797Z   Preparing metadata (pyproject.toml): started
+quality	Install pinned dependencies	2026-10-03T07:01:23.3131791Z   Preparing metadata (pyproject.toml): finished with status 'done'
+quality	Install pinned dependencies	2026-10-03T07:01:23.4039291Z Collecting pydantic==2.5.2 (from -r requirements.txt (line 14))
+quality	Install pinned dependencies	2026-10-03T07:01:23.4086701Z   Downloading pydantic-2.5.2-py3-none-any.whl.metadata (65 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:23.4260632Z Collecting python-dotenv==1.0.0 (from -r requirements.txt (line 17))
+quality	Install pinned dependencies	2026-10-03T07:01:23.4293884Z   Downloading python_dotenv-1.0.0-py3-none-any.whl.metadata (21 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:23.4533225Z Collecting pytest==7.4.3 (from -r requirements-dev.txt (line 2))
+quality	Install pinned dependencies	2026-10-03T07:01:23.4569204Z   Downloading pytest-7.4.3-py3-none-any.whl.metadata (7.9 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:23.4712956Z Collecting pytest-cov==4.1.0 (from -r requirements-dev.txt (line 3))
+quality	Install pinned dependencies	2026-10-03T07:01:23.4749438Z   Downloading pytest_cov-4.1.0-py3-none-any.whl.metadata (26 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:23.4921902Z Collecting pytest-asyncio==0.23.2 (from -r requirements-dev.txt (line 4))
+quality	Install pinned dependencies	2026-10-03T07:01:23.4966771Z   Downloading pytest_asyncio-0.23.2-py3-none-any.whl.metadata (3.9 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:23.5138165Z Collecting httpx==0.25.2 (from -r requirements-dev.txt (line 5))
+quality	Install pinned dependencies	2026-10-03T07:01:23.5182233Z   Downloading httpx-0.25.2-py3-none-any.whl.metadata (6.9 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:23.5681625Z Collecting black==23.12.1 (from -r requirements-dev.txt (line 8))
+quality	Install pinned dependencies	2026-10-03T07:01:23.5740804Z   Downloading black-23.12.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (68 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:23.5952353Z Collecting flake8==7.0.0 (from -r requirements-dev.txt (line 9))
+quality	Install pinned dependencies	2026-10-03T07:01:23.5994395Z   Downloading flake8-7.0.0-py2.py3-none-any.whl.metadata (3.8 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:23.6271348Z Collecting isort==5.13.2 (from -r requirements-dev.txt (line 10))
+quality	Install pinned dependencies	2026-10-03T07:01:23.6306442Z   Downloading isort-5.13.2-py3-none-any.whl.metadata (12 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:23.7435404Z Collecting mypy==1.8.0 (from -r requirements-dev.txt (line 11))
+quality	Install pinned dependencies	2026-10-03T07:01:23.7475724Z   Downloading mypy-1.8.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.8 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:23.7714011Z Collecting pre-commit==3.6.0 (from -r requirements-dev.txt (line 14))
+quality	Install pinned dependencies	2026-10-03T07:01:23.7755267Z   Downloading pre_commit-3.6.0-py2.py3-none-any.whl.metadata (1.3 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:23.7951377Z Collecting types-requests==2.31.0 (from -r requirements-dev.txt (line 17))
+quality	Install pinned dependencies	2026-10-03T07:01:23.7993743Z   Downloading types_requests-2.31.0.0-py3-none-any.whl.metadata (1.3 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:23.8197548Z Collecting anyio<4.0.0,>=3.7.1 (from fastapi==0.104.1->-r requirements.txt (line 2))
+quality	Install pinned dependencies	2026-10-03T07:01:23.8230047Z   Downloading anyio-3.7.1-py3-none-any.whl.metadata (4.7 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:23.8483009Z Collecting starlette<0.28.0,>=0.27.0 (from fastapi==0.104.1->-r requirements.txt (line 2))
+quality	Install pinned dependencies	2026-10-03T07:01:23.8535545Z   Downloading starlette-0.27.0-py3-none-any.whl.metadata (5.8 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:23.8705701Z Collecting typing-extensions>=4.8.0 (from fastapi==0.104.1->-r requirements.txt (line 2))
+quality	Install pinned dependencies	2026-10-03T07:01:23.8739953Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:23.8849366Z Collecting annotated-types>=0.4.0 (from pydantic==2.5.2->-r requirements.txt (line 14))
+quality	Install pinned dependencies	2026-10-03T07:01:23.8891416Z   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:24.5018359Z Collecting pydantic-core==2.14.5 (from pydantic==2.5.2->-r requirements.txt (line 14))
+quality	Install pinned dependencies	2026-10-03T07:01:24.5060373Z   Downloading pydantic_core-2.14.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:24.5245173Z Collecting click>=7.0 (from uvicorn==0.24.0->-r requirements.txt (line 3))
+quality	Install pinned dependencies	2026-10-03T07:01:24.5279067Z   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:24.5409411Z Collecting h11>=0.8 (from uvicorn==0.24.0->-r requirements.txt (line 3))
+quality	Install pinned dependencies	2026-10-03T07:01:24.5442844Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:24.5576388Z Collecting python-dateutil>=2.8.2 (from pandas==2.1.3->-r requirements.txt (line 6))
+quality	Install pinned dependencies	2026-10-03T07:01:24.5611452Z   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:24.6171208Z Collecting pytz>=2020.1 (from pandas==2.1.3->-r requirements.txt (line 6))
+quality	Install pinned dependencies	2026-10-03T07:01:24.6205637Z   Downloading pytz-2026.4-py2.py3-none-any.whl.metadata (22 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:24.6352498Z Collecting tzdata>=2022.1 (from pandas==2.1.3->-r requirements.txt (line 6))
+quality	Install pinned dependencies	2026-10-03T07:01:24.6384327Z   Downloading tzdata-2026.4-py2.py3-none-any.whl.metadata (1.4 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:24.7587997Z Collecting scipy>=1.5.0 (from scikit-learn==1.3.2->-r requirements.txt (line 10))
+quality	Install pinned dependencies	2026-10-03T07:01:24.7625058Z   Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:24.7919549Z Collecting joblib>=1.1.1 (from scikit-learn==1.3.2->-r requirements.txt (line 10))
+quality	Install pinned dependencies	2026-10-03T07:01:24.7959017Z   Downloading joblib-1.6.0-py3-none-any.whl.metadata (6.5 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:24.8087196Z Collecting threadpoolctl>=2.0.0 (from scikit-learn==1.3.2->-r requirements.txt (line 10))
+quality	Install pinned dependencies	2026-10-03T07:01:24.8151502Z   Downloading threadpoolctl-3.7.0-py3-none-any.whl.metadata (24 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:24.8401869Z Collecting iniconfig (from pytest==7.4.3->-r requirements-dev.txt (line 2))
+quality	Install pinned dependencies	2026-10-03T07:01:24.8441279Z   Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:24.8626115Z Collecting packaging (from pytest==7.4.3->-r requirements-dev.txt (line 2))
+quality	Install pinned dependencies	2026-10-03T07:01:24.8660991Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:24.8780103Z Collecting pluggy<2.0,>=0.12 (from pytest==7.4.3->-r requirements-dev.txt (line 2))
+quality	Install pinned dependencies	2026-10-03T07:01:24.8814175Z   Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:25.2807918Z Collecting coverage>=5.2.1 (from coverage[toml]>=5.2.1->pytest-cov==4.1.0->-r requirements-dev.txt (line 3))
+quality	Install pinned dependencies	2026-10-03T07:01:25.2846128Z   Downloading coverage-7.16.2-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (8.2 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:25.3061528Z Collecting certifi (from httpx==0.25.2->-r requirements-dev.txt (line 5))
+quality	Install pinned dependencies	2026-10-03T07:01:25.3094601Z   Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:25.3248087Z Collecting httpcore==1.* (from httpx==0.25.2->-r requirements-dev.txt (line 5))
+quality	Install pinned dependencies	2026-10-03T07:01:25.3280806Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:25.3436455Z Collecting idna (from httpx==0.25.2->-r requirements-dev.txt (line 5))
+quality	Install pinned dependencies	2026-10-03T07:01:25.3470895Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:25.3581102Z Collecting sniffio (from httpx==0.25.2->-r requirements-dev.txt (line 5))
+quality	Install pinned dependencies	2026-10-03T07:01:25.3614628Z   Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:25.3736499Z Collecting mypy-extensions>=0.4.3 (from black==23.12.1->-r requirements-dev.txt (line 8))
+quality	Install pinned dependencies	2026-10-03T07:01:25.3776085Z   Downloading mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:25.3919240Z Collecting pathspec>=0.9.0 (from black==23.12.1->-r requirements-dev.txt (line 8))
+quality	Install pinned dependencies	2026-10-03T07:01:25.3950676Z   Downloading pathspec-1.1.1-py3-none-any.whl.metadata (14 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:25.4211608Z Collecting platformdirs>=2 (from black==23.12.1->-r requirements-dev.txt (line 8))
+quality	Install pinned dependencies	2026-10-03T07:01:25.4246453Z   Downloading platformdirs-4.12.2-py3-none-any.whl.metadata (5.5 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:25.4371478Z Collecting mccabe<0.8.0,>=0.7.0 (from flake8==7.0.0->-r requirements-dev.txt (line 9))
+quality	Install pinned dependencies	2026-10-03T07:01:25.4405680Z   Downloading mccabe-0.7.0-py2.py3-none-any.whl.metadata (5.0 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:25.4525493Z Collecting pycodestyle<2.12.0,>=2.11.0 (from flake8==7.0.0->-r requirements-dev.txt (line 9))
+quality	Install pinned dependencies	2026-10-03T07:01:25.4558978Z   Downloading pycodestyle-2.11.1-py2.py3-none-any.whl.metadata (4.5 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:25.4701648Z Collecting pyflakes<3.3.0,>=3.2.0 (from flake8==7.0.0->-r requirements-dev.txt (line 9))
+quality	Install pinned dependencies	2026-10-03T07:01:25.4729249Z   Downloading pyflakes-3.2.0-py2.py3-none-any.whl.metadata (3.5 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:25.4882731Z Collecting cfgv>=2.0.0 (from pre-commit==3.6.0->-r requirements-dev.txt (line 14))
+quality	Install pinned dependencies	2026-10-03T07:01:25.4916716Z   Downloading cfgv-3.5.0-py2.py3-none-any.whl.metadata (8.9 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:25.5237166Z Collecting identify>=1.0.0 (from pre-commit==3.6.0->-r requirements-dev.txt (line 14))
+quality	Install pinned dependencies	2026-10-03T07:01:25.5270626Z   Downloading identify-2.6.20-py2.py3-none-any.whl.metadata (4.4 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:25.5400273Z Collecting nodeenv>=0.11.1 (from pre-commit==3.6.0->-r requirements-dev.txt (line 14))
+quality	Install pinned dependencies	2026-10-03T07:01:25.5433723Z   Downloading nodeenv-1.11.0-py2.py3-none-any.whl.metadata (40 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:25.5784762Z Collecting pyyaml>=5.1 (from pre-commit==3.6.0->-r requirements-dev.txt (line 14))
+quality	Install pinned dependencies	2026-10-03T07:01:25.5826618Z   Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:25.6201780Z Collecting virtualenv>=20.10.0 (from pre-commit==3.6.0->-r requirements-dev.txt (line 14))
+quality	Install pinned dependencies	2026-10-03T07:01:25.6254791Z   Downloading virtualenv-21.14.5-py3-none-any.whl.metadata (4.1 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:25.6418394Z Collecting types-urllib3 (from types-requests==2.31.0->-r requirements-dev.txt (line 17))
+quality	Install pinned dependencies	2026-10-03T07:01:25.6457201Z   Downloading types_urllib3-1.26.25.14-py3-none-any.whl.metadata (1.7 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:25.6737033Z Collecting cloudpickle>=3.0 (from joblib>=1.1.1->scikit-learn==1.3.2->-r requirements.txt (line 10))
+quality	Install pinned dependencies	2026-10-03T07:01:25.6769798Z   Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:25.6961739Z Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas==2.1.3->-r requirements.txt (line 6))
+quality	Install pinned dependencies	2026-10-03T07:01:25.6988592Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:25.9142930Z INFO: pip is looking at multiple versions of scipy to determine which version is compatible with other requirements. This could take a while.
+quality	Install pinned dependencies	2026-10-03T07:01:25.9175377Z Collecting scipy>=1.5.0 (from scikit-learn==1.3.2->-r requirements.txt (line 10))
+quality	Install pinned dependencies	2026-10-03T07:01:25.9280399Z   Downloading scipy-1.17.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:25.9501908Z   Downloading scipy-1.16.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (62 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:25.9781740Z Collecting distlib<1,>=0.3.7 (from virtualenv>=20.10.0->pre-commit==3.6.0->-r requirements-dev.txt (line 14))
+quality	Install pinned dependencies	2026-10-03T07:01:25.9815215Z   Downloading distlib-0.4.3-py2.py3-none-any.whl.metadata (5.3 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.0021758Z Collecting filelock<5,>=3.24.2 (from virtualenv>=20.10.0->pre-commit==3.6.0->-r requirements-dev.txt (line 14))
+quality	Install pinned dependencies	2026-10-03T07:01:26.0051300Z   Downloading filelock-4.0.9-py3-none-any.whl.metadata (2.0 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.0205865Z Collecting python-discovery>=1.6 (from virtualenv>=20.10.0->pre-commit==3.6.0->-r requirements-dev.txt (line 14))
+quality	Install pinned dependencies	2026-10-03T07:01:26.0239272Z   Downloading python_discovery-1.6.1-py3-none-any.whl.metadata (5.1 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.0397399Z Downloading fastapi-0.104.1-py3-none-any.whl (92 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.0454911Z Downloading pydantic-2.5.2-py3-none-any.whl (381 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.0537101Z Downloading uvicorn-0.24.0-py3-none-any.whl (59 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.0620277Z Downloading pandas-2.1.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.2 MB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.1346428Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.2/12.2 MB 174.0 MB/s  0:00:00
+quality	Install pinned dependencies	2026-10-03T07:01:26.1386489Z Downloading scikit_learn-1.3.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.9 MB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.1955915Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.9/10.9 MB 198.8 MB/s  0:00:00
+quality	Install pinned dependencies	2026-10-03T07:01:26.2028568Z Downloading python_dotenv-1.0.0-py3-none-any.whl (19 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.2061245Z Downloading pytest-7.4.3-py3-none-any.whl (325 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.2137638Z Downloading pytest_cov-4.1.0-py3-none-any.whl (21 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.2198263Z Downloading pytest_asyncio-0.23.2-py3-none-any.whl (17 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.2249157Z Downloading httpx-0.25.2-py3-none-any.whl (74 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.2341402Z Downloading black-23.12.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.7 MB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.2420657Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 257.8 MB/s  0:00:00
+quality	Install pinned dependencies	2026-10-03T07:01:26.2452818Z Downloading flake8-7.0.0-py2.py3-none-any.whl (57 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.2509178Z Downloading isort-5.13.2-py3-none-any.whl (92 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.2588875Z Downloading mypy-1.8.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.4 MB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.3171293Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.4/12.4 MB 217.6 MB/s  0:00:00
+quality	Install pinned dependencies	2026-10-03T07:01:26.3208437Z Downloading pre_commit-3.6.0-py2.py3-none-any.whl (204 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.3279772Z Downloading types_requests-2.31.0.0-py3-none-any.whl (14 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.3327827Z Downloading pydantic_core-2.14.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.3433730Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 221.9 MB/s  0:00:00
+quality	Install pinned dependencies	2026-10-03T07:01:26.3468401Z Downloading anyio-3.7.1-py3-none-any.whl (80 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.3526964Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.3587302Z Downloading mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.3646663Z Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.3698655Z Downloading pycodestyle-2.11.1-py2.py3-none-any.whl (31 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.3748245Z Downloading pyflakes-3.2.0-py2.py3-none-any.whl (62 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.3801239Z Downloading starlette-0.27.0-py3-none-any.whl (66 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.3851970Z Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.3911346Z Downloading cfgv-3.5.0-py2.py3-none-any.whl (7.4 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.3999096Z Downloading click-8.5.0-py3-none-any.whl (125 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.4053796Z Downloading coverage-7.16.2-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (256 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.4111213Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.4165198Z Downloading identify-2.6.20-py2.py3-none-any.whl (99 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.4219500Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.4272022Z Downloading joblib-1.6.0-py3-none-any.whl (306 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.4329390Z Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.4384029Z Downloading mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.4427468Z Downloading nodeenv-1.11.0-py2.py3-none-any.whl (34 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.4478392Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.4531240Z Downloading pathspec-1.1.1-py3-none-any.whl (57 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.4584367Z Downloading platformdirs-4.12.2-py3-none-any.whl (32 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.4634903Z Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.4697490Z Downloading pytz-2026.4-py2.py3-none-any.whl (506 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.4764731Z Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (806 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.4820997Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 806.6/806.6 kB 173.1 MB/s  0:00:00
+quality	Install pinned dependencies	2026-10-03T07:01:26.4863947Z Downloading scipy-1.16.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (35.9 MB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.6415329Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.9/35.9 MB 234.1 MB/s  0:00:00
+quality	Install pinned dependencies	2026-10-03T07:01:26.6450939Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.6501436Z Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.6552694Z Downloading threadpoolctl-3.7.0-py3-none-any.whl (26 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.6601132Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.6655338Z Downloading tzdata-2026.4-py2.py3-none-any.whl (347 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.6714466Z Downloading virtualenv-21.14.5-py3-none-any.whl (5.5 MB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.6910205Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 310.4 MB/s  0:00:00
+quality	Install pinned dependencies	2026-10-03T07:01:26.6945230Z Downloading distlib-0.4.3-py2.py3-none-any.whl (470 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.7017344Z Downloading filelock-4.0.9-py3-none-any.whl (110 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.7070693Z Downloading python_discovery-1.6.1-py3-none-any.whl (38 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.7123447Z Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.7176994Z Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.7226727Z Downloading types_urllib3-1.26.25.14-py3-none-any.whl (15 kB)
+quality	Install pinned dependencies	2026-10-03T07:01:26.9320781Z Building wheels for collected packages: scikit-surprise
+quality	Install pinned dependencies	2026-10-03T07:01:26.9331126Z   Building wheel for scikit-surprise (pyproject.toml): started
+quality	Install pinned dependencies	2026-10-03T07:02:08.6465081Z   Building wheel for scikit-surprise (pyproject.toml): finished with status 'done'
+quality	Install pinned dependencies	2026-10-03T07:02:08.6499796Z   Created wheel for scikit-surprise: filename=scikit_surprise-1.1.3-cp311-cp311-linux_x86_64.whl size=3918969 sha256=97d35c187188ee98661e814df8c716dddb9dfc9be381b3639f9e5f4965e4d5b5
+quality	Install pinned dependencies	2026-10-03T07:02:08.6502133Z   Stored in directory: /home/runner/.cache/pip/wheels/f4/2b/26/e2a5eae55d3b7688995e66abe7f40473aac6c95ddd8ee174a8
+quality	Install pinned dependencies	2026-10-03T07:02:08.6523588Z Successfully built scikit-surprise
+quality	Install pinned dependencies	2026-10-03T07:02:08.7722590Z Installing collected packages: types-urllib3, pytz, distlib, tzdata, typing-extensions, types-requests, threadpoolctl, sniffio, six, scipy, pyyaml, python-dotenv, pyflakes, pycodestyle, pluggy, platformdirs, pathspec, packaging, nodeenv, mypy-extensions, mccabe, isort, iniconfig, idna, identify, h11, filelock, coverage, cloudpickle, click, cfgv, certifi, annotated-types, uvicorn, python-discovery, python-dateutil, pytest, pydantic-core, mypy, joblib, httpcore, flake8, black, anyio, virtualenv, starlette, scikit-surprise, scikit-learn, pytest-cov, pytest-asyncio, pydantic, pandas, httpx, pre-commit, fastapi
+quality	Install pinned dependencies	2026-10-03T07:02:21.6379291Z
+quality	Install pinned dependencies	2026-10-03T07:02:21.6411426Z Successfully installed annotated-types-0.8.0 anyio-3.7.1 black-23.12.1 certifi-2026.7.22 cfgv-3.5.0 click-8.5.0 cloudpickle-3.1.2 coverage-7.16.2 distlib-0.4.3 fastapi-0.104.1 filelock-4.0.9 flake8-7.0.0 h11-0.16.0 httpcore-1.0.9 httpx-0.25.2 identify-2.6.20 idna-3.20 iniconfig-2.3.0 isort-5.13.2 joblib-1.6.0 mccabe-0.7.0 mypy-1.8.0 mypy-extensions-1.1.0 nodeenv-1.11.0 packaging-26.3 pandas-2.1.3 pathspec-1.1.1 platformdirs-4.12.2 pluggy-1.6.0 pre-commit-3.6.0 pycodestyle-2.11.1 pydantic-2.5.2 pydantic-core-2.14.5 pyflakes-3.2.0 pytest-7.4.3 pytest-asyncio-0.23.2 pytest-cov-4.1.0 python-dateutil-2.9.0.post0 python-discovery-1.6.1 python-dotenv-1.0.0 pytz-2026.4 pyyaml-6.0.3 scikit-learn-1.3.2 scikit-surprise-1.1.3 scipy-1.16.3 six-1.17.0 sniffio-1.3.1 starlette-0.27.0 threadpoolctl-3.7.0 types-requests-2.31.0.0 types-urllib3-1.26.25.14 typing-extensions-4.16.0 tzdata-2026.4 uvicorn-0.24.0 virtualenv-21.14.5
+quality	Lint, format and types	﻿2026-10-03T07:02:21.8770174Z ##[group]Run flake8 app tests scripts
+quality	Lint, format and types	2026-10-03T07:02:21.8771026Z ^[[36;1mflake8 app tests scripts^[[0m
+quality	Lint, format and types	2026-10-03T07:02:21.8771339Z ^[[36;1mblack --check app tests scripts^[[0m
+quality	Lint, format and types	2026-10-03T07:02:21.8771667Z ^[[36;1misort --check-only app tests scripts^[[0m
+quality	Lint, format and types	2026-10-03T07:02:21.8771958Z ^[[36;1mmypy app^[[0m
+quality	Lint, format and types	2026-10-03T07:02:21.8835180Z shell: /usr/bin/bash -e {0}
+quality	Lint, format and types	2026-10-03T07:02:21.8835434Z env:
+quality	Lint, format and types	2026-10-03T07:02:21.8835701Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.16/x64
+quality	Lint, format and types	2026-10-03T07:02:21.8836149Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib/pkgconfig
+quality	Lint, format and types	2026-10-03T07:02:21.8836592Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+quality	Lint, format and types	2026-10-03T07:02:21.8837002Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+quality	Lint, format and types	2026-10-03T07:02:21.8837392Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+quality	Lint, format and types	2026-10-03T07:02:21.8837799Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib
+quality	Lint, format and types	2026-10-03T07:02:21.8838118Z ##[endgroup]
+quality	Lint, format and types	2026-10-03T07:02:22.8871763Z All done! ✨ 🍰 ✨
+quality	Lint, format and types	2026-10-03T07:02:22.8872385Z 17 files would be left unchanged.
+quality	Lint, format and types	2026-10-03T07:02:27.4847864Z Success: no issues found in 5 source files
+quality	Train and validate model	﻿2026-10-03T07:02:27.4999515Z ##[group]Run python scripts/train_model.py
+quality	Train and validate model	2026-10-03T07:02:27.4999900Z ^[[36;1mpython scripts/train_model.py^[[0m
+quality	Train and validate model	2026-10-03T07:02:27.5062688Z shell: /usr/bin/bash -e {0}
+quality	Train and validate model	2026-10-03T07:02:27.5062939Z env:
+quality	Train and validate model	2026-10-03T07:02:27.5063244Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.16/x64
+quality	Train and validate model	2026-10-03T07:02:27.5063682Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib/pkgconfig
+quality	Train and validate model	2026-10-03T07:02:27.5064103Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+quality	Train and validate model	2026-10-03T07:02:27.5064475Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+quality	Train and validate model	2026-10-03T07:02:27.5064866Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+quality	Train and validate model	2026-10-03T07:02:27.5065275Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib
+quality	Train and validate model	2026-10-03T07:02:27.5065602Z ##[endgroup]
+quality	Train and validate model	2026-10-03T07:02:33.0506838Z Evaluating RMSE, MAE of algorithm SVD on 5 split(s).
+quality	Train and validate model	2026-10-03T07:02:33.0507543Z
+quality	Train and validate model	2026-10-03T07:02:33.0507906Z                   Fold 1  Fold 2  Fold 3  Fold 4  Fold 5  Mean    Std
+quality	Train and validate model	2026-10-03T07:02:33.0508743Z RMSE (testset)    0.9376  0.9345  0.9385  0.9364  0.9338  0.9362  0.0018
+quality	Train and validate model	2026-10-03T07:02:33.0509524Z MAE (testset)     0.7367  0.7352  0.7415  0.7372  0.7383  0.7378  0.0021
+quality	Train and validate model	2026-10-03T07:02:33.0510270Z Fit time          0.58    0.60    0.72    0.68    0.61    0.64    0.05
+quality	Train and validate model	2026-10-03T07:02:33.0511454Z Test time         0.09    0.09    0.09    0.09    0.09    0.09    0.00
+quality	Train and validate model	2026-10-03T07:02:33.0512068Z {
+quality	Train and validate model	2026-10-03T07:02:33.0512464Z   "rmse": 0.9361820512443714,
+quality	Train and validate model	2026-10-03T07:02:33.0512950Z   "mae": 0.7377801472040193,
+quality	Train and validate model	2026-10-03T07:02:33.0513405Z   "seed": 501,
+quality	Train and validate model	2026-10-03T07:02:33.0513807Z   "folds": 5,
+quality	Train and validate model	2026-10-03T07:02:33.0514204Z   "rows": 100000
+quality	Train and validate model	2026-10-03T07:02:33.0514589Z }
+quality	All four test categories and coverage gate	﻿2026-10-03T07:02:33.0943554Z ##[group]Run pytest --cov=app --cov-fail-under=80 --cov-report=term-missing --cov-report=xml --cov-report=html --junitxml=junit.xml
+quality	All four test categories and coverage gate	2026-10-03T07:02:33.0944548Z ^[[36;1mpytest --cov=app --cov-fail-under=80 --cov-report=term-missing --cov-report=xml --cov-report=html --junitxml=junit.xml^[[0m
+quality	All four test categories and coverage gate	2026-10-03T07:02:33.1007903Z shell: /usr/bin/bash -e {0}
+quality	All four test categories and coverage gate	2026-10-03T07:02:33.1008160Z env:
+quality	All four test categories and coverage gate	2026-10-03T07:02:33.1008435Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.16/x64
+quality	All four test categories and coverage gate	2026-10-03T07:02:33.1008890Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib/pkgconfig
+quality	All four test categories and coverage gate	2026-10-03T07:02:33.1009325Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+quality	All four test categories and coverage gate	2026-10-03T07:02:33.1009719Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+quality	All four test categories and coverage gate	2026-10-03T07:02:33.1010097Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+quality	All four test categories and coverage gate	2026-10-03T07:02:33.1010833Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib
+quality	All four test categories and coverage gate	2026-10-03T07:02:33.1011424Z ##[endgroup]
+quality	All four test categories and coverage gate	2026-10-03T07:02:34.7368866Z ============================= test session starts ==============================
+quality	All four test categories and coverage gate	2026-10-03T07:02:34.7370868Z platform linux -- Python 3.11.16, pytest-7.4.3, pluggy-1.6.0 -- /opt/hostedtoolcache/Python/3.11.16/x64/bin/python
+quality	All four test categories and coverage gate	2026-10-03T07:02:34.7374848Z cachedir: .pytest_cache
+quality	All four test categories and coverage gate	2026-10-03T07:02:34.7375829Z rootdir: /home/runner/work/ddm501-lab3-testing-cicd/ddm501-lab3-testing-cicd
+quality	All four test categories and coverage gate	2026-10-03T07:02:34.7376847Z configfile: pyproject.toml
+quality	All four test categories and coverage gate	2026-10-03T07:02:34.7377522Z testpaths: tests
+quality	All four test categories and coverage gate	2026-10-03T07:02:34.7378299Z plugins: platformdirs-4.12.2, asyncio-0.23.2, cov-4.1.0, anyio-3.7.1
+quality	All four test categories and coverage gate	2026-10-03T07:02:34.7379177Z asyncio: mode=Mode.STRICT
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.3688123Z collecting ... collected 73 items
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.3688943Z
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.4118749Z tests/data/test_data_quality.py::test_schema_and_completeness PASSED     [  1%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.4309070Z tests/data/test_data_quality.py::test_rating_range_and_distribution PASSED [  2%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.4410301Z tests/data/test_data_quality.py::test_entities_and_unique_pairs PASSED   [  4%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.6742131Z tests/integration/test_api.py::test_metadata_and_health PASSED           [  5%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.6769231Z tests/integration/test_api.py::test_prediction PASSED                    [  6%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.6856627Z tests/integration/test_api.py::test_batch_matches_single PASSED          [  8%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.6892727Z tests/integration/test_api.py::test_reject_invalid_payload[payload0] PASSED [  9%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.6928029Z tests/integration/test_api.py::test_reject_invalid_payload[payload1] PASSED [ 10%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.6964131Z tests/integration/test_api.py::test_reject_invalid_payload[payload2] PASSED [ 12%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.6999024Z tests/integration/test_api.py::test_reject_invalid_payload[payload3] PASSED [ 13%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.7038235Z tests/integration/test_api.py::test_reject_invalid_payload[payload4] PASSED [ 15%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.7075040Z tests/integration/test_api.py::test_reject_invalid_payload[payload5] PASSED [ 16%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.7117466Z tests/integration/test_api.py::test_reject_invalid_batch[predictions0] PASSED [ 17%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.7175643Z tests/integration/test_api.py::test_reject_invalid_batch[predictions1] PASSED [ 19%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.7210738Z tests/integration/test_api.py::test_reject_invalid_batch[predictions2] PASSED [ 20%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.7269877Z tests/integration/test_api.py::test_http_errors PASSED                   [ 21%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.7345591Z tests/integration/test_api.py::test_unavailable_and_failed_model[/predict-payload0] PASSED [ 23%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.7441603Z tests/integration/test_api.py::test_unavailable_and_failed_model[/predict/batch-payload1] PASSED [ 24%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.7466455Z tests/integration/test_api.py::test_startup_failure_clears_old_model PASSED [ 26%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.7814861Z tests/model/test_model_behavior.py::test_repeat_and_order_invariance PASSED [ 27%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.7836590Z tests/model/test_model_behavior.py::test_known_pairs[196-242] PASSED     [ 28%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.7858089Z tests/model/test_model_behavior.py::test_known_pairs[186-302] PASSED     [ 30%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.7877673Z tests/model/test_model_behavior.py::test_known_pairs[22-377] PASSED      [ 31%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.7897068Z tests/model/test_model_behavior.py::test_cold_start[new_user-242] PASSED [ 32%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.7916403Z tests/model/test_model_behavior.py::test_cold_start[196-new_movie] PASSED [ 34%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.7935479Z tests/model/test_model_behavior.py::test_cold_start[new_user-new_movie] PASSED [ 35%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.7952667Z tests/model/test_model_behavior.py::test_unknown_both_uses_global_mean PASSED [ 36%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.7980300Z tests/model/test_model_behavior.py::test_directional_movie_preference PASSED [ 38%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.7999965Z tests/model/test_model_behavior.py::test_out_of_fold_performance_gate PASSED [ 39%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.8017483Z tests/unit/test_model.py::test_loaded_model PASSED                       [ 41%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.8040484Z tests/unit/test_model.py::test_rounding_and_clipping[-10.0-1.0] PASSED   [ 42%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.8064365Z tests/unit/test_model.py::test_rounding_and_clipping[9.0-5.0] PASSED     [ 43%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.8086751Z tests/unit/test_model.py::test_rounding_and_clipping[3.456-3.46] PASSED  [ 45%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.8104871Z tests/unit/test_model.py::test_batch_preserves_order PASSED              [ 46%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.8129510Z tests/unit/test_model.py::test_unloaded_model_fails[predict-args0] PASSED [ 47%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.8150519Z tests/unit/test_model.py::test_unloaded_model_fails[predict_batch-args1] PASSED [ 49%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.8170244Z tests/unit/test_model.py::test_invalid_ids_fail[None-2] PASSED           [ 50%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.8189551Z tests/unit/test_model.py::test_invalid_ids_fail[-2] PASSED               [ 52%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.8208704Z tests/unit/test_model.py::test_invalid_ids_fail[1- ] PASSED              [ 53%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.8227824Z tests/unit/test_model.py::test_invalid_ids_fail[1-2] PASSED              [ 54%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.8272779Z tests/unit/test_model.py::test_missing_artifact PASSED                   [ 56%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.8298684Z tests/unit/test_model.py::test_corrupt_artifact PASSED                   [ 57%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9147877Z tests/unit/test_model.py::test_singleton_reset PASSED                    [ 58%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9166836Z tests/unit/test_schemas.py::test_strip_ids[PredictionRequest] PASSED     [ 60%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9184923Z tests/unit/test_schemas.py::test_strip_ids[PredictionItem] PASSED        [ 61%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9204012Z tests/unit/test_schemas.py::test_invalid_request[payload0-PredictionRequest] PASSED [ 63%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9222739Z tests/unit/test_schemas.py::test_invalid_request[payload0-PredictionItem] PASSED [ 64%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9241308Z tests/unit/test_schemas.py::test_invalid_request[payload1-PredictionRequest] PASSED [ 65%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9260872Z tests/unit/test_schemas.py::test_invalid_request[payload1-PredictionItem] PASSED [ 67%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9279581Z tests/unit/test_schemas.py::test_invalid_request[payload2-PredictionRequest] PASSED [ 68%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9298658Z tests/unit/test_schemas.py::test_invalid_request[payload2-PredictionItem] PASSED [ 69%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9317702Z tests/unit/test_schemas.py::test_invalid_request[payload3-PredictionRequest] PASSED [ 71%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9337380Z tests/unit/test_schemas.py::test_invalid_request[payload3-PredictionItem] PASSED [ 72%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9357786Z tests/unit/test_schemas.py::test_invalid_request[payload4-PredictionRequest] PASSED [ 73%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9377428Z tests/unit/test_schemas.py::test_invalid_request[payload4-PredictionItem] PASSED [ 75%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9396534Z tests/unit/test_schemas.py::test_invalid_request[payload5-PredictionRequest] PASSED [ 76%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9415595Z tests/unit/test_schemas.py::test_invalid_request[payload5-PredictionItem] PASSED [ 78%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9434969Z tests/unit/test_schemas.py::test_invalid_request[payload6-PredictionRequest] PASSED [ 79%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9453959Z tests/unit/test_schemas.py::test_invalid_request[payload6-PredictionItem] PASSED [ 80%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9472594Z tests/unit/test_schemas.py::test_invalid_request[payload7-PredictionRequest] PASSED [ 82%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9491511Z tests/unit/test_schemas.py::test_invalid_request[payload7-PredictionItem] PASSED [ 83%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9510206Z tests/unit/test_schemas.py::test_invalid_request[payload8-PredictionRequest] PASSED [ 84%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9529185Z tests/unit/test_schemas.py::test_invalid_request[payload8-PredictionItem] PASSED [ 86%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9546863Z tests/unit/test_schemas.py::test_response_bounds[1.0] PASSED             [ 87%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9565211Z tests/unit/test_schemas.py::test_response_bounds[3.5] PASSED             [ 89%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9587344Z tests/unit/test_schemas.py::test_response_bounds[5.0] PASSED             [ 90%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9605170Z tests/unit/test_schemas.py::test_response_invalid_rating[0.99] PASSED    [ 91%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9623125Z tests/unit/test_schemas.py::test_response_invalid_rating[5.01] PASSED    [ 93%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9640774Z tests/unit/test_schemas.py::test_response_invalid_rating[nan] PASSED     [ 94%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9658583Z tests/unit/test_schemas.py::test_response_invalid_rating[inf] PASSED     [ 95%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9676835Z tests/unit/test_schemas.py::test_batch_limits[0] PASSED                  [ 97%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:35.9698031Z tests/unit/test_schemas.py::test_batch_limits[101] PASSED                [ 98%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:36.0627067Z tests/unit/test_schemas.py::test_max_batch_and_health PASSED             [100%]
+quality	All four test categories and coverage gate	2026-10-03T07:02:36.0628071Z
+quality	All four test categories and coverage gate	2026-10-03T07:02:36.0629234Z - generated xml file: /home/runner/work/ddm501-lab3-testing-cicd/ddm501-lab3-testing-cicd/junit.xml -
+quality	All four test categories and coverage gate	2026-10-03T07:02:36.0630700Z
+quality	All four test categories and coverage gate	2026-10-03T07:02:36.0631404Z ---------- coverage: platform linux, python 3.11.16-final-0 ----------
+quality	All four test categories and coverage gate	2026-10-03T07:02:36.0632349Z Name              Stmts   Miss  Cover   Missing
+quality	All four test categories and coverage gate	2026-10-03T07:02:36.0633037Z -----------------------------------------------
+quality	All four test categories and coverage gate	2026-10-03T07:02:36.0633669Z app/__init__.py       1      0   100%
+quality	All four test categories and coverage gate	2026-10-03T07:02:36.0634263Z app/config.py        13      0   100%
+quality	All four test categories and coverage gate	2026-10-03T07:02:36.0634892Z app/main.py          51      0   100%
+quality	All four test categories and coverage gate	2026-10-03T07:02:36.0635510Z app/model.py         46      0   100%
+quality	All four test categories and coverage gate	2026-10-03T07:02:36.0636091Z app/schemas.py       28      0   100%
+quality	All four test categories and coverage gate	2026-10-03T07:02:36.0636927Z -----------------------------------------------
+quality	All four test categories and coverage gate	2026-10-03T07:02:36.0641470Z TOTAL               139      0   100%
+quality	All four test categories and coverage gate	2026-10-03T07:02:36.0642139Z Coverage HTML written to dir htmlcov
+quality	All four test categories and coverage gate	2026-10-03T07:02:36.0642767Z Coverage XML written to file coverage.xml
+quality	All four test categories and coverage gate	2026-10-03T07:02:36.0643256Z
+quality	All four test categories and coverage gate	2026-10-03T07:02:36.0643684Z Required test coverage of 80% reached. Total coverage: 100.00%
+quality	All four test categories and coverage gate	2026-10-03T07:02:36.0644499Z ============================== 73 passed in 1.33s ==============================
+quality	Run actions/upload-artifact@v4	﻿2026-10-03T07:02:36.2529177Z ##[group]Run actions/upload-artifact@v4
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.2529511Z with:
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.2529719Z   name: test-and-coverage
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.2530032Z   path: coverage.xml
+quality	Run actions/upload-artifact@v4	htmlcov/
+quality	Run actions/upload-artifact@v4	junit.xml
+quality	Run actions/upload-artifact@v4	models/metrics.json
+quality	Run actions/upload-artifact@v4
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.2530384Z   if-no-files-found: warn
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.2531002Z   compression-level: 6
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.2531225Z   overwrite: false
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.2531444Z   include-hidden-files: false
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.2531679Z env:
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.2531932Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.16/x64
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.2532377Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib/pkgconfig
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.2532800Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.2533181Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.2533578Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.2533993Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.2534341Z ##[endgroup]
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.4291006Z (node:2213) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.4292582Z (Use `node --trace-deprecation ...` to show where the warning was created)
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.4692266Z Multiple search paths detected. Calculating the least common ancestor of all paths
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.4695564Z The least common ancestor is /home/runner/work/ddm501-lab3-testing-cicd/ddm501-lab3-testing-cicd. This will be the root directory of the artifact
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.4696916Z With the provided path, there will be 16 files uploaded
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.4698011Z Artifact name is valid!
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.4698565Z Root directory input is valid!
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.6482202Z Beginning upload of artifact content to blob storage
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.7032400Z (node:2213) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.7579637Z Uploaded bytes 42219
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.7756178Z Finished uploading artifact content to blob storage!
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.7757791Z SHA256 digest of uploaded artifact zip is 6de88c7e909729dd13da34d7cbf5b186f1037fe13164f7afff5105e02a5cc81d
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:36.7759569Z Finalizing artifact upload
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.0097073Z Artifact test-and-coverage.zip successfully finalized. Artifact ID 11267976014
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.0098511Z Artifact test-and-coverage has been successfully uploaded! Final size is 42219 bytes. Artifact ID is 11267976014
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.0104189Z Artifact download URL: https://github.com/thanhhai12/ddm501-lab3-testing-cicd/actions/runs/37104939441/artifacts/11267976014
+quality	Run actions/upload-artifact@v4	﻿2026-10-03T07:02:37.0275141Z ##[group]Run actions/upload-artifact@v4
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.0275686Z with:
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.0276042Z   name: trained-model
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.0276454Z   path: models/svd_model.pkl
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.0276890Z   if-no-files-found: warn
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.0277296Z   compression-level: 6
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.0277667Z   overwrite: false
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.0278041Z   include-hidden-files: false
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.0278443Z env:
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.0278871Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.16/x64
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.0279635Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib/pkgconfig
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.0280408Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.0281516Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.0282216Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.0282930Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.0283493Z ##[endgroup]
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.2145048Z (node:2225) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.2147056Z (Use `node --trace-deprecation ...` to show where the warning was created)
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.2518266Z With the provided path, there will be 1 file uploaded
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.2521680Z Artifact name is valid!
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.2522492Z Root directory input is valid!
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.4110131Z Beginning upload of artifact content to blob storage
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.6417699Z (node:2225) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.7673720Z Uploaded bytes 2575391
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.7839249Z Finished uploading artifact content to blob storage!
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.7856126Z SHA256 digest of uploaded artifact zip is b5d49a542a8afbedec4d16b4b4827238015ff22c640c8a10606896a41d0ca662
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:37.7861163Z Finalizing artifact upload
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:38.0071427Z Artifact trained-model.zip successfully finalized. Artifact ID 11267311597
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:38.0091673Z Artifact trained-model has been successfully uploaded! Final size is 2575391 bytes. Artifact ID is 11267311597
+quality	Run actions/upload-artifact@v4	2026-10-03T07:02:38.0100032Z Artifact download URL: https://github.com/thanhhai12/ddm501-lab3-testing-cicd/actions/runs/37104939441/artifacts/11267311597
+quality	Post Run actions/setup-python@v5	﻿2026-10-03T07:02:38.0258012Z Post job cleanup.
+quality	Post Run actions/setup-python@v5	2026-10-03T07:02:38.1649113Z (node:2238) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+quality	Post Run actions/setup-python@v5	2026-10-03T07:02:38.1650896Z (Use `node --trace-deprecation ...` to show where the warning was created)
+quality	Post Run actions/setup-python@v5	2026-10-03T07:02:38.2085920Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/ddm501-lab3-testing-cicd/ddm501-lab3-testing-cicd --files-from manifest.txt --use-compress-program zstdmt
+quality	Post Run actions/setup-python@v5	2026-10-03T07:02:38.8141703Z (node:2238) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+quality	Post Run actions/setup-python@v5	2026-10-03T07:02:39.8036079Z Sent 96206848 of 118117047 (81.5%), 91.8 MBs/sec
+quality	Post Run actions/setup-python@v5	2026-10-03T07:02:40.2605019Z Sent 118117047 of 118117047 (100.0%), 77.3 MBs/sec
+quality	Post Run actions/setup-python@v5	2026-10-03T07:02:40.3534728Z Cache saved with the key: setup-python-Linux-x64-24.04-Ubuntu-python-3.11.16-pip-4a50b8a592be97fbafd82d3faef4dc487bc8bb7f653ca8575ccf4ddb874f952f
+quality	Post Run actions/checkout@v4	﻿2026-10-03T07:02:40.3736841Z Post job cleanup.
+quality	Post Run actions/checkout@v4	2026-10-03T07:02:40.4851190Z [command]/usr/bin/git version
+quality	Post Run actions/checkout@v4	2026-10-03T07:02:40.4938609Z git version 2.55.0
+quality	Post Run actions/checkout@v4	2026-10-03T07:02:40.5026848Z Temporarily overriding HOME='/home/runner/work/_temp/b02b6f1f-5d5f-43fd-a53c-4f801a2fb807' before making global git config changes
+quality	Post Run actions/checkout@v4	2026-10-03T07:02:40.5028368Z Adding repository directory to the temporary git global config as a safe directory
+quality	Post Run actions/checkout@v4	2026-10-03T07:02:40.5029853Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ddm501-lab3-testing-cicd/ddm501-lab3-testing-cicd
+quality	Post Run actions/checkout@v4	2026-10-03T07:02:40.5126565Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+quality	Post Run actions/checkout@v4	2026-10-03T07:02:40.5211837Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+quality	Post Run actions/checkout@v4	2026-10-03T07:02:40.5540249Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+quality	Post Run actions/checkout@v4	2026-10-03T07:02:40.5579740Z http.https://github.com/.extraheader
+quality	Post Run actions/checkout@v4	2026-10-03T07:02:40.5604923Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+quality	Post Run actions/checkout@v4	2026-10-03T07:02:40.5682222Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+quality	Post Run actions/checkout@v4	2026-10-03T07:02:40.6055742Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+quality	Post Run actions/checkout@v4	2026-10-03T07:02:40.6127741Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+quality	Complete job	﻿2026-10-03T07:02:40.6639244Z Cleaning up orphan processes
+quality	Complete job	2026-10-03T07:02:40.6915051Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+docker	Set up job	﻿2026-10-03T07:02:45.4517623Z Current runner version: '2.337.0'
+docker	Set up job	2026-10-03T07:02:45.4554502Z ##[group]Runner Image Provisioner
+docker	Set up job	2026-10-03T07:02:45.4555789Z Hosted Compute Agent
+docker	Set up job	2026-10-03T07:02:45.4556891Z Version: 20260901.588
+docker	Set up job	2026-10-03T07:02:45.4558146Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+docker	Set up job	2026-10-03T07:02:45.4559581Z Build Date: 2026-09-01T19:56:44Z
+docker	Set up job	2026-10-03T07:02:45.4560792Z Worker ID: {c79ca53c-b964-463f-9a93-5f669d6c899d}
+docker	Set up job	2026-10-03T07:02:45.4562009Z Azure Region: westcentralus
+docker	Set up job	2026-10-03T07:02:45.4563574Z ##[endgroup]
+docker	Set up job	2026-10-03T07:02:45.4566110Z ##[group]Operating System
+docker	Set up job	2026-10-03T07:02:45.4567262Z Ubuntu
+docker	Set up job	2026-10-03T07:02:45.4568145Z 24.04.5
+docker	Set up job	2026-10-03T07:02:45.4568967Z LTS
+docker	Set up job	2026-10-03T07:02:45.4569912Z ##[endgroup]
+docker	Set up job	2026-10-03T07:02:45.4570940Z ##[group]Runner Image
+docker	Set up job	2026-10-03T07:02:45.4572067Z Image: ubuntu-24.04
+docker	Set up job	2026-10-03T07:02:45.4573553Z Version: 20260927.320.1
+docker	Set up job	2026-10-03T07:02:45.4575542Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+docker	Set up job	2026-10-03T07:02:45.4578824Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+docker	Set up job	2026-10-03T07:02:45.4580627Z ##[endgroup]
+docker	Set up job	2026-10-03T07:02:45.4582449Z ##[group]GITHUB_TOKEN Permissions
+docker	Set up job	2026-10-03T07:02:45.4585477Z Contents: read
+docker	Set up job	2026-10-03T07:02:45.4586543Z Metadata: read
+docker	Set up job	2026-10-03T07:02:45.4588043Z ##[endgroup]
+docker	Set up job	2026-10-03T07:02:45.4591316Z Secret source: Actions
+docker	Set up job	2026-10-03T07:02:45.4593301Z Cache mode: write
+docker	Set up job	2026-10-03T07:02:45.4594951Z Prepare workflow directory
+docker	Set up job	2026-10-03T07:02:45.5393507Z Prepare all required actions
+docker	Set up job	2026-10-03T07:02:45.5527022Z Getting action download info
+docker	Set up job	2026-10-03T07:02:45.9094174Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+docker	Set up job	2026-10-03T07:02:46.0252526Z Download action repository 'actions/download-artifact@v4' (SHA:d3f86a106a0bac45b974a628896c90dbdf5c8093)
+docker	Set up job	2026-10-03T07:02:46.7040351Z Complete job name: docker
+docker	Run actions/checkout@v4	﻿2026-10-03T07:02:46.7772527Z ##[group]Run actions/checkout@v4
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.7773681Z with:
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.7774184Z   repository: thanhhai12/ddm501-lab3-testing-cicd
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.7778014Z   token: ***
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.7778438Z   ssh-strict: true
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.7778864Z   ssh-user: git
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.7779323Z   persist-credentials: true
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.7779807Z   clean: true
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.7780244Z   sparse-checkout-cone-mode: true
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.7780749Z   fetch-depth: 1
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.7781167Z   fetch-tags: false
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.7781601Z   show-progress: true
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.7782046Z   lfs: false
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.7782452Z   submodules: false
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.7783052Z   set-safe-directory: true
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.7783559Z   allow-unsafe-pr-checkout: false
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.7784328Z ##[endgroup]
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.8992237Z Syncing repository: thanhhai12/ddm501-lab3-testing-cicd
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9023974Z ##[group]Getting Git version info
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9025756Z Working directory is '/home/runner/work/ddm501-lab3-testing-cicd/ddm501-lab3-testing-cicd'
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9034360Z [command]/usr/bin/git version
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9139118Z git version 2.55.0
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9197963Z ##[endgroup]
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9206042Z Temporarily overriding HOME='/home/runner/work/_temp/2816d82c-5b8f-432a-9ec2-cbdf7af9e4e4' before making global git config changes
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9208689Z Adding repository directory to the temporary git global config as a safe directory
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9211178Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ddm501-lab3-testing-cicd/ddm501-lab3-testing-cicd
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9294210Z Deleting the contents of '/home/runner/work/ddm501-lab3-testing-cicd/ddm501-lab3-testing-cicd'
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9304427Z ##[group]Initializing the repository
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9306212Z [command]/usr/bin/git init /home/runner/work/ddm501-lab3-testing-cicd/ddm501-lab3-testing-cicd
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9409201Z hint: Using 'master' as the name for the initial branch. This default branch name
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9433944Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9441470Z hint: to use in all of your new repositories, which will suppress this warning,
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9443416Z hint: call:
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9444320Z hint:
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9445364Z hint: 	git config --global init.defaultBranch <name>
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9446621Z hint:
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9447913Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9449716Z hint: 'development'. The just-created branch can be renamed via this command:
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9451116Z hint:
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9451958Z hint: 	git branch -m <name>
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9453342Z hint:
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9454659Z hint: Disable this message with "git config set advice.defaultBranchName false"
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9456887Z Initialized empty Git repository in /home/runner/work/ddm501-lab3-testing-cicd/ddm501-lab3-testing-cicd/.git/
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9460680Z [command]/usr/bin/git remote add origin https://github.com/thanhhai12/ddm501-lab3-testing-cicd
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9544007Z ##[endgroup]
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9550885Z ##[group]Disabling automatic garbage collection
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9561557Z [command]/usr/bin/git config --local gc.auto 0
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9596724Z ##[endgroup]
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9611422Z ##[group]Setting up auth
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9644021Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+docker	Run actions/checkout@v4	2026-10-03T07:02:46.9652567Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+docker	Run actions/checkout@v4	2026-10-03T07:02:47.0140921Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+docker	Run actions/checkout@v4	2026-10-03T07:02:47.0193810Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+docker	Run actions/checkout@v4	2026-10-03T07:02:47.0486756Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+docker	Run actions/checkout@v4	2026-10-03T07:02:47.0529843Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+docker	Run actions/checkout@v4	2026-10-03T07:02:47.0773484Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+docker	Run actions/checkout@v4	2026-10-03T07:02:47.0834384Z ##[endgroup]
+docker	Run actions/checkout@v4	2026-10-03T07:02:47.0836293Z ##[group]Fetching the repository
+docker	Run actions/checkout@v4	2026-10-03T07:02:47.0841401Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +84708ebf48411e0740d43245c4e01114c209e53c:refs/remotes/origin/main
+docker	Run actions/checkout@v4	2026-10-03T07:02:47.7997102Z From https://github.com/thanhhai12/ddm501-lab3-testing-cicd
+docker	Run actions/checkout@v4	2026-10-03T07:02:47.8001317Z  * [new ref]         84708ebf48411e0740d43245c4e01114c209e53c -> origin/main
+docker	Run actions/checkout@v4	2026-10-03T07:02:47.8008225Z ##[endgroup]
+docker	Run actions/checkout@v4	2026-10-03T07:02:47.8011034Z ##[group]Determining the checkout info
+docker	Run actions/checkout@v4	2026-10-03T07:02:47.8014393Z ##[endgroup]
+docker	Run actions/checkout@v4	2026-10-03T07:02:47.8017938Z [command]/usr/bin/git sparse-checkout disable
+docker	Run actions/checkout@v4	2026-10-03T07:02:47.8075395Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+docker	Run actions/checkout@v4	2026-10-03T07:02:47.8117375Z ##[group]Checking out the ref
+docker	Run actions/checkout@v4	2026-10-03T07:02:47.8120763Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+docker	Run actions/checkout@v4	2026-10-03T07:02:47.8304417Z Switched to a new branch 'main'
+docker	Run actions/checkout@v4	2026-10-03T07:02:47.8320202Z branch 'main' set up to track 'origin/main'.
+docker	Run actions/checkout@v4	2026-10-03T07:02:47.8327150Z ##[endgroup]
+docker	Run actions/checkout@v4	2026-10-03T07:02:47.8369433Z [command]/usr/bin/git log -1 --format=%H
+docker	Run actions/checkout@v4	2026-10-03T07:02:47.8399662Z 84708ebf48411e0740d43245c4e01114c209e53c
+docker	Run actions/download-artifact@v4	﻿2026-10-03T07:02:47.8726493Z ##[group]Run actions/download-artifact@v4
+docker	Run actions/download-artifact@v4	2026-10-03T07:02:47.8727832Z with:
+docker	Run actions/download-artifact@v4	2026-10-03T07:02:47.8728657Z   name: trained-model
+docker	Run actions/download-artifact@v4	2026-10-03T07:02:47.8729600Z   path: models
+docker	Run actions/download-artifact@v4	2026-10-03T07:02:47.8730499Z   merge-multiple: false
+docker	Run actions/download-artifact@v4	2026-10-03T07:02:47.8731843Z   repository: thanhhai12/ddm501-lab3-testing-cicd
+docker	Run actions/download-artifact@v4	2026-10-03T07:02:47.8733342Z   run-id: 37104939441
+docker	Run actions/download-artifact@v4	2026-10-03T07:02:47.8734231Z ##[endgroup]
+docker	Run actions/download-artifact@v4	2026-10-03T07:02:48.0844339Z (node:2124) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+docker	Run actions/download-artifact@v4	2026-10-03T07:02:48.0853941Z (Use `node --trace-deprecation ...` to show where the warning was created)
+docker	Run actions/download-artifact@v4	2026-10-03T07:02:48.0854977Z Downloading single artifact
+docker	Run actions/download-artifact@v4	2026-10-03T07:02:48.2652105Z Preparing to download the following artifacts:
+docker	Run actions/download-artifact@v4	2026-10-03T07:02:48.2654656Z - trained-model (ID: 11267311597, Size: 2575391, Expected Digest: sha256:b5d49a542a8afbedec4d16b4b4827238015ff22c640c8a10606896a41d0ca662)
+docker	Run actions/download-artifact@v4	2026-10-03T07:02:48.4608591Z Redirecting to blob download url: https://productionresultssa15.blob.core.windows.net/actions-results/743e024e-f8af-8105-8b48-212dbdbf590c/workflow-job-run-0583f340-4fe9-5f07-b3c3-7c5ef1a8a2f5/artifacts/f89aafa92a7da4e27fbbef01f5a39057fc8c969231fdfaa0c7307f7b3b663ab8.zip
+docker	Run actions/download-artifact@v4	2026-10-03T07:02:48.4612454Z Starting download of artifact to: /home/runner/work/ddm501-lab3-testing-cicd/ddm501-lab3-testing-cicd/models
+docker	Run actions/download-artifact@v4	2026-10-03T07:02:48.6948036Z (node:2124) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+docker	Run actions/download-artifact@v4	2026-10-03T07:02:49.2399706Z SHA256 digest of downloaded artifact is b5d49a542a8afbedec4d16b4b4827238015ff22c640c8a10606896a41d0ca662
+docker	Run actions/download-artifact@v4	2026-10-03T07:02:49.2401549Z Artifact download completed successfully.
+docker	Run actions/download-artifact@v4	2026-10-03T07:02:49.2402621Z Total of 1 artifact(s) downloaded
+docker	Run actions/download-artifact@v4	2026-10-03T07:02:49.2423667Z Download artifact has finished successfully
+docker	Build and smoke-test serving image	﻿2026-10-03T07:02:49.2551787Z ##[group]Run docker build -t movie-rating-api:test .
+docker	Build and smoke-test serving image	2026-10-03T07:02:49.2552334Z ^[[36;1mdocker build -t movie-rating-api:test .^[[0m
+docker	Build and smoke-test serving image	2026-10-03T07:02:49.2553343Z ^[[36;1mdocker run -d -p 8000:8000 --name movie-api movie-rating-api:test^[[0m
+docker	Build and smoke-test serving image	2026-10-03T07:02:49.2553831Z ^[[36;1mfor i in $(seq 1 60); do^[[0m
+docker	Build and smoke-test serving image	2026-10-03T07:02:49.2554501Z ^[[36;1m  if curl -sf localhost:8000/health | python -c "import json,sys; assert json.load(sys.stdin)['model_loaded']"; then break; fi^[[0m
+docker	Build and smoke-test serving image	2026-10-03T07:02:49.2555129Z ^[[36;1m  sleep 2^[[0m
+docker	Build and smoke-test serving image	2026-10-03T07:02:49.2555400Z ^[[36;1mdone^[[0m
+docker	Build and smoke-test serving image	2026-10-03T07:02:49.2555901Z ^[[36;1mcurl -sf localhost:8000/health | python -c "import json,sys; assert json.load(sys.stdin)['model_loaded']"^[[0m
+docker	Build and smoke-test serving image	2026-10-03T07:02:49.2556984Z ^[[36;1mcurl -sf -H 'Content-Type: application/json' -d '{"user_id":"196","movie_id":"242"}' localhost:8000/predict | python -c "import json,sys; assert 1 <= json.load(sys.stdin)['predicted_rating'] <= 5"^[[0m
+docker	Build and smoke-test serving image	2026-10-03T07:02:49.2797214Z shell: /usr/bin/bash -e {0}
+docker	Build and smoke-test serving image	2026-10-03T07:02:49.2797682Z ##[endgroup]
+docker	Build and smoke-test serving image	2026-10-03T07:02:51.5946874Z #0 building with "default" instance using docker driver
+docker	Build and smoke-test serving image	2026-10-03T07:02:51.5948881Z
+docker	Build and smoke-test serving image	2026-10-03T07:02:51.5949797Z #1 [internal] load build definition from Dockerfile
+docker	Build and smoke-test serving image	2026-10-03T07:02:51.5956426Z #1 transferring dockerfile: 770B 0.0s done
+docker	Build and smoke-test serving image	2026-10-03T07:02:51.5957722Z #1 DONE 0.0s
+docker	Build and smoke-test serving image	2026-10-03T07:02:51.5958671Z
+docker	Build and smoke-test serving image	2026-10-03T07:02:51.5959318Z #2 [internal] load metadata for docker.io/library/python:3.11-slim
+docker	Build and smoke-test serving image	2026-10-03T07:02:51.7543379Z #2 ...
+docker	Build and smoke-test serving image	2026-10-03T07:02:51.7543791Z
+docker	Build and smoke-test serving image	2026-10-03T07:02:51.7544168Z #3 [auth] library/python:pull token for registry-1.docker.io
+docker	Build and smoke-test serving image	2026-10-03T07:02:51.7545162Z #3 DONE 0.0s
+docker	Build and smoke-test serving image	2026-10-03T07:02:51.9034509Z
+docker	Build and smoke-test serving image	2026-10-03T07:02:51.9035914Z #2 [internal] load metadata for docker.io/library/python:3.11-slim
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.2324885Z #2 DONE 0.8s
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.3540490Z
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.3546457Z #4 [internal] load .dockerignore
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.3549382Z #4 transferring context: 113B done
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.3550676Z #4 DONE 0.0s
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.3552675Z
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.3554053Z #5 [internal] load build context
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.3556924Z #5 transferring context: 4.91MB 0.0s done
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.3557749Z #5 DONE 0.0s
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.3558212Z
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.3559117Z #6 [1/7] FROM docker.io/library/python:3.11-slim@sha256:bab1b7ef4b450c81002278d035eff85ebe394ae94df904f7a3ba14f7e16e487b
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.3561973Z #6 resolve docker.io/library/python:3.11-slim@sha256:bab1b7ef4b450c81002278d035eff85ebe394ae94df904f7a3ba14f7e16e487b done
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.3570614Z #6 sha256:6b37362b3da78869050b894b799ad4df04f1f3b52774087db0d81151570244c8 0B / 29.83MB 0.1s
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.3572081Z #6 sha256:f64163c1b799b4915c58c0439006ebe6e393a8c346d2393f08fa0ca74e306f6e 0B / 4.27MB 0.1s
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.3573831Z #6 sha256:295f1967d0454b54c78432d56f412a274da4b46e92cdf5679aea04fbd47b9c36 0B / 14.46MB 0.1s
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.3575322Z #6 sha256:bab1b7ef4b450c81002278d035eff85ebe394ae94df904f7a3ba14f7e16e487b 10.37kB / 10.37kB done
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.3576844Z #6 sha256:922f47525757de33aff59f24cdfc85f412ac4a06aa8af7c7e9028d584b7bcdeb 1.75kB / 1.75kB done
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.3578331Z #6 sha256:d3846bce6e97d0ef5c32fc023300d5e39251ad791e6fdfaee41d2ba75246766e 5.49kB / 5.49kB done
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.5566833Z #6 sha256:6b37362b3da78869050b894b799ad4df04f1f3b52774087db0d81151570244c8 13.63MB / 29.83MB 0.3s
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.5568227Z #6 sha256:f64163c1b799b4915c58c0439006ebe6e393a8c346d2393f08fa0ca74e306f6e 1.05MB / 4.27MB 0.3s
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.5569484Z #6 sha256:295f1967d0454b54c78432d56f412a274da4b46e92cdf5679aea04fbd47b9c36 1.05MB / 14.46MB 0.3s
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.6592061Z #6 sha256:6b37362b3da78869050b894b799ad4df04f1f3b52774087db0d81151570244c8 29.83MB / 29.83MB 0.4s done
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.6593924Z #6 sha256:f64163c1b799b4915c58c0439006ebe6e393a8c346d2393f08fa0ca74e306f6e 4.27MB / 4.27MB 0.3s done
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.6597524Z #6 sha256:295f1967d0454b54c78432d56f412a274da4b46e92cdf5679aea04fbd47b9c36 4.19MB / 14.46MB 0.4s
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.6599117Z #6 sha256:48355dfcbf9e05ad2daf9d9506583bdb41b02ff7d67a5f2b239217e09320604c 0B / 250B 0.4s
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.6600373Z #6 extracting sha256:6b37362b3da78869050b894b799ad4df04f1f3b52774087db0d81151570244c8
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.7625883Z #6 sha256:295f1967d0454b54c78432d56f412a274da4b46e92cdf5679aea04fbd47b9c36 12.58MB / 14.46MB 0.5s
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.7629570Z #6 sha256:48355dfcbf9e05ad2daf9d9506583bdb41b02ff7d67a5f2b239217e09320604c 250B / 250B 0.4s done
+docker	Build and smoke-test serving image	2026-10-03T07:02:52.8661397Z #6 sha256:295f1967d0454b54c78432d56f412a274da4b46e92cdf5679aea04fbd47b9c36 14.46MB / 14.46MB 0.5s done
+docker	Build and smoke-test serving image	2026-10-03T07:02:53.8174419Z #6 extracting sha256:6b37362b3da78869050b894b799ad4df04f1f3b52774087db0d81151570244c8 1.2s done
+docker	Build and smoke-test serving image	2026-10-03T07:02:53.9475542Z #6 extracting sha256:f64163c1b799b4915c58c0439006ebe6e393a8c346d2393f08fa0ca74e306f6e 0.1s
+docker	Build and smoke-test serving image	2026-10-03T07:02:54.1694228Z #6 extracting sha256:f64163c1b799b4915c58c0439006ebe6e393a8c346d2393f08fa0ca74e306f6e 0.2s done
+docker	Build and smoke-test serving image	2026-10-03T07:02:56.6329218Z #6 extracting sha256:295f1967d0454b54c78432d56f412a274da4b46e92cdf5679aea04fbd47b9c36
+docker	Build and smoke-test serving image	2026-10-03T07:02:57.5351531Z #6 extracting sha256:295f1967d0454b54c78432d56f412a274da4b46e92cdf5679aea04fbd47b9c36 0.8s done
+docker	Build and smoke-test serving image	2026-10-03T07:02:57.5359496Z #6 extracting sha256:48355dfcbf9e05ad2daf9d9506583bdb41b02ff7d67a5f2b239217e09320604c
+docker	Build and smoke-test serving image	2026-10-03T07:02:57.7505163Z #6 extracting sha256:48355dfcbf9e05ad2daf9d9506583bdb41b02ff7d67a5f2b239217e09320604c done
+docker	Build and smoke-test serving image	2026-10-03T07:02:57.7506305Z #6 DONE 5.3s
+docker	Build and smoke-test serving image	2026-10-03T07:02:57.7506753Z
+docker	Build and smoke-test serving image	2026-10-03T07:02:57.7507068Z #7 [2/7] WORKDIR /app
+docker	Build and smoke-test serving image	2026-10-03T07:02:57.7507590Z #7 DONE 0.0s
+docker	Build and smoke-test serving image	2026-10-03T07:02:57.7507955Z
+docker	Build and smoke-test serving image	2026-10-03T07:02:57.7508322Z #8 [3/7] COPY requirements*.txt ./
+docker	Build and smoke-test serving image	2026-10-03T07:02:57.7508890Z #8 DONE 0.0s
+docker	Build and smoke-test serving image	2026-10-03T07:02:57.7509237Z
+docker	Build and smoke-test serving image	2026-10-03T07:02:57.7510852Z #9 [4/7] RUN apt-get update && apt-get install -y --no-install-recommends g++     && pip install --no-cache-dir -r requirements-build.txt     && pip install --no-cache-dir --no-build-isolation -r requirements.txt     && apt-get purge -y g++ && apt-get autoremove -y && rm -rf /var/lib/apt/lists/*
+docker	Build and smoke-test serving image	2026-10-03T07:02:57.8298123Z #9 0.229 Hit:1 http://deb.debian.org/debian trixie InRelease
+docker	Build and smoke-test serving image	2026-10-03T07:02:58.0469296Z #9 0.241 Get:2 http://deb.debian.org/debian trixie-updates InRelease [47.3 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:02:58.0471323Z #9 0.275 Get:3 http://deb.debian.org/debian-security trixie-security InRelease [43.4 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:02:58.0472944Z #9 0.296 Get:4 http://deb.debian.org/debian trixie/main amd64 Packages [9678 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:02:58.1011328Z #9 0.501 Get:5 http://deb.debian.org/debian trixie-updates/main amd64 Packages [4412 B]
+docker	Build and smoke-test serving image	2026-10-03T07:02:58.2694939Z #9 0.519 Get:6 http://deb.debian.org/debian-security trixie-security/main amd64 Packages [264 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:02:58.7401118Z #9 1.140 Fetched 10.0 MB in 1s (10.5 MB/s)
+docker	Build and smoke-test serving image	2026-10-03T07:02:59.1857367Z #9 1.140 Reading package lists...
+docker	Build and smoke-test serving image	2026-10-03T07:02:59.6652266Z #9 1.603 Reading package lists...
+docker	Build and smoke-test serving image	2026-10-03T07:02:59.7787179Z #9 2.074 Building dependency tree...
+docker	Build and smoke-test serving image	2026-10-03T07:02:59.9032459Z #9 2.178 Reading state information...
+docker	Build and smoke-test serving image	2026-10-03T07:02:59.9034147Z #9 2.302 The following additional packages will be installed:
+docker	Build and smoke-test serving image	2026-10-03T07:02:59.9035701Z #9 2.302   binutils binutils-common binutils-x86-64-linux-gnu cpp cpp-14
+docker	Build and smoke-test serving image	2026-10-03T07:02:59.9036888Z #9 2.302   cpp-14-x86-64-linux-gnu cpp-x86-64-linux-gnu g++-14 g++-14-x86-64-linux-gnu
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.0108356Z #9 2.302   g++-x86-64-linux-gnu gcc gcc-14 gcc-14-x86-64-linux-gnu gcc-x86-64-linux-gnu
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.0113710Z #9 2.302   libasan8 libatomic1 libbinutils libc-dev-bin libc6-dev libcc1-0 libcrypt-dev
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.0115330Z #9 2.302   libctf-nobfd0 libctf0 libgcc-14-dev libgomp1 libgprofng0 libhwasan0 libisl23
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.0116547Z #9 2.303   libitm1 libjansson4 liblsan0 libmpc3 libmpfr6 libquadmath0 libsframe1
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.0117772Z #9 2.303   libstdc++-14-dev libtsan2 libubsan1 linux-libc-dev rpcsvc-proto
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.0118735Z #9 2.304 Suggested packages:
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.0119645Z #9 2.304   binutils-doc gprofng-gui binutils-gold cpp-doc gcc-14-locales cpp-14-doc
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.0121336Z #9 2.304   g++-multilib g++-14-multilib gcc-14-doc gcc-multilib make manpages-dev
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.0122471Z #9 2.304   autoconf automake libtool flex bison gdb gcc-doc gcc-14-multilib
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.0127604Z #9 2.304   gdb-x86-64-linux-gnu libc-devtools glibc-doc libstdc++-14-doc
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.0128785Z #9 2.304 Recommended packages:
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.0129561Z #9 2.304   manpages manpages-dev
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.0130397Z #9 2.410 The following NEW packages will be installed:
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.0131400Z #9 2.410   binutils binutils-common binutils-x86-64-linux-gnu cpp cpp-14
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.1457197Z #9 2.410   cpp-14-x86-64-linux-gnu cpp-x86-64-linux-gnu g++ g++-14
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.1458518Z #9 2.410   g++-14-x86-64-linux-gnu g++-x86-64-linux-gnu gcc gcc-14
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.1460300Z #9 2.410   gcc-14-x86-64-linux-gnu gcc-x86-64-linux-gnu libasan8 libatomic1 libbinutils
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.1461798Z #9 2.410   libc-dev-bin libc6-dev libcc1-0 libcrypt-dev libctf-nobfd0 libctf0
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.1462475Z #9 2.410   libgcc-14-dev libgomp1 libgprofng0 libhwasan0 libisl23 libitm1 libjansson4
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.1463694Z #9 2.411   liblsan0 libmpc3 libmpfr6 libquadmath0 libsframe1 libstdc++-14-dev libtsan2
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.1464327Z #9 2.411   libubsan1 linux-libc-dev rpcsvc-proto
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.1464798Z #9 2.507 0 upgraded, 41 newly installed, 0 to remove and 1 not upgraded.
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.1465254Z #9 2.507 Need to get 71.7 MB of archives.
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.1465720Z #9 2.507 After this operation, 277 MB of additional disk space will be used.
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.1466416Z #9 2.507 Get:1 http://deb.debian.org/debian trixie/main amd64 libsframe1 amd64 2.44-3 [78.4 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.1467197Z #9 2.546 Get:2 http://deb.debian.org/debian trixie/main amd64 binutils-common amd64 2.44-3 [2509 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.2739982Z #9 2.674 Get:3 http://deb.debian.org/debian trixie/main amd64 libbinutils amd64 2.44-3 [534 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.3776343Z #9 2.688 Get:4 http://deb.debian.org/debian trixie/main amd64 libgprofng0 amd64 2.44-3 [808 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.3798771Z #9 2.692 Get:5 http://deb.debian.org/debian trixie/main amd64 libctf-nobfd0 amd64 2.44-3 [156 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.3800350Z #9 2.693 Get:6 http://deb.debian.org/debian trixie/main amd64 libctf0 amd64 2.44-3 [88.6 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.3801808Z #9 2.693 Get:7 http://deb.debian.org/debian trixie/main amd64 libjansson4 amd64 2.14-2+b3 [39.8 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.3803673Z #9 2.694 Get:8 http://deb.debian.org/debian trixie/main amd64 binutils-x86-64-linux-gnu amd64 2.44-3 [1014 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.3805104Z #9 2.709 Get:9 http://deb.debian.org/debian trixie/main amd64 binutils amd64 2.44-3 [265 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.3806572Z #9 2.710 Get:10 http://deb.debian.org/debian trixie/main amd64 libisl23 amd64 0.27-1 [659 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.3808099Z #9 2.721 Get:11 http://deb.debian.org/debian trixie/main amd64 libmpfr6 amd64 4.2.2-1 [729 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.3809593Z #9 2.725 Get:12 http://deb.debian.org/debian trixie/main amd64 libmpc3 amd64 1.3.1-1+b3 [52.2 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.3811133Z #9 2.726 Get:13 http://deb.debian.org/debian trixie/main amd64 cpp-14-x86-64-linux-gnu amd64 14.2.0-19 [11.0 MB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.3812484Z #9 2.777 Get:14 http://deb.debian.org/debian trixie/main amd64 cpp-14 amd64 14.2.0-19 [1280 B]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.3814184Z #9 2.777 Get:15 http://deb.debian.org/debian trixie/main amd64 cpp-x86-64-linux-gnu amd64 4:14.2.0-1 [4840 B]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.3815722Z #9 2.777 Get:16 http://deb.debian.org/debian trixie/main amd64 cpp amd64 4:14.2.0-1 [1568 B]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.5279279Z #9 2.778 Get:17 http://deb.debian.org/debian trixie/main amd64 libcc1-0 amd64 14.2.0-19 [42.8 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.5285905Z #9 2.779 Get:18 http://deb.debian.org/debian trixie/main amd64 libgomp1 amd64 14.2.0-19 [137 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.5298737Z #9 2.783 Get:19 http://deb.debian.org/debian trixie/main amd64 libitm1 amd64 14.2.0-19 [26.0 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.5306381Z #9 2.783 Get:20 http://deb.debian.org/debian trixie/main amd64 libatomic1 amd64 14.2.0-19 [9308 B]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.5308802Z #9 2.784 Get:21 http://deb.debian.org/debian trixie/main amd64 libasan8 amd64 14.2.0-19 [2725 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.5311188Z #9 2.798 Get:22 http://deb.debian.org/debian trixie/main amd64 liblsan0 amd64 14.2.0-19 [1204 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.5319499Z #9 2.803 Get:23 http://deb.debian.org/debian trixie/main amd64 libtsan2 amd64 14.2.0-19 [2460 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.5322151Z #9 2.810 Get:24 http://deb.debian.org/debian trixie/main amd64 libubsan1 amd64 14.2.0-19 [1074 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.5328462Z #9 2.815 Get:25 http://deb.debian.org/debian trixie/main amd64 libhwasan0 amd64 14.2.0-19 [1488 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.5330847Z #9 2.824 Get:26 http://deb.debian.org/debian trixie/main amd64 libquadmath0 amd64 14.2.0-19 [145 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.5333143Z #9 2.826 Get:27 http://deb.debian.org/debian trixie/main amd64 libgcc-14-dev amd64 14.2.0-19 [2672 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.5370071Z #9 2.838 Get:28 http://deb.debian.org/debian trixie/main amd64 gcc-14-x86-64-linux-gnu amd64 14.2.0-19 [21.4 MB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.5371946Z #9 2.924 Get:29 http://deb.debian.org/debian trixie/main amd64 gcc-14 amd64 14.2.0-19 [540 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.6989640Z #9 2.927 Get:30 http://deb.debian.org/debian trixie/main amd64 gcc-x86-64-linux-gnu amd64 4:14.2.0-1 [1436 B]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.6996736Z #9 2.930 Get:31 http://deb.debian.org/debian trixie/main amd64 gcc amd64 4:14.2.0-1 [5136 B]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.6998174Z #9 2.930 Get:32 http://deb.debian.org/debian trixie/main amd64 libc-dev-bin amd64 2.41-12+deb13u4 [60.0 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.6999796Z #9 2.930 Get:33 http://deb.debian.org/debian-security trixie-security/main amd64 linux-libc-dev all 6.12.111-1 [2988 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.7001295Z #9 2.936 Get:34 http://deb.debian.org/debian trixie/main amd64 libcrypt-dev amd64 1:4.4.38-1 [119 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.7002622Z #9 2.936 Get:35 http://deb.debian.org/debian trixie/main amd64 rpcsvc-proto amd64 1.4.3-1 [63.3 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.7006080Z #9 2.936 Get:36 http://deb.debian.org/debian trixie/main amd64 libc6-dev amd64 2.41-12+deb13u4 [1995 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.7007597Z #9 2.943 Get:37 http://deb.debian.org/debian trixie/main amd64 libstdc++-14-dev amd64 14.2.0-19 [2376 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.7012193Z #9 2.952 Get:38 http://deb.debian.org/debian trixie/main amd64 g++-14-x86-64-linux-gnu amd64 14.2.0-19 [12.1 MB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.7013697Z #9 2.990 Get:39 http://deb.debian.org/debian trixie/main amd64 g++-14 amd64 14.2.0-19 [22.5 kB]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.7014878Z #9 2.990 Get:40 http://deb.debian.org/debian trixie/main amd64 g++-x86-64-linux-gnu amd64 4:14.2.0-1 [1200 B]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.7016189Z #9 2.991 Get:41 http://deb.debian.org/debian trixie/main amd64 g++ amd64 4:14.2.0-1 [1344 B]
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.7017105Z #9 3.096 debconf: unable to initialize frontend: Dialog
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.7017874Z #9 3.096 debconf: (TERM is not set, so the dialog frontend is not usable.)
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.8540792Z #9 3.097 debconf: falling back to frontend: Readline
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.8542017Z #9 3.097 debconf: unable to initialize frontend: Readline
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.8552068Z #9 3.098 debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.40.1 /usr/local/share/perl/5.40.1 /usr/lib/x86_64-linux-gnu/perl5/5.40 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.40 /usr/share/perl/5.40 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8, <STDIN> line 41.)
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.8555923Z #9 3.098 debconf: falling back to frontend: Teletype
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.8557247Z #9 3.103 debconf: unable to initialize frontend: Teletype
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.8558311Z #9 3.103 debconf: (This frontend requires a controlling tty.)
+docker	Build and smoke-test serving image	2026-10-03T07:03:00.8559622Z #9 3.103 debconf: falling back to frontend: Noninteractive
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.6149015Z #9 4.015 Fetched 71.7 MB in 1s (126 MB/s)
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7696466Z #9 4.029 Selecting previously unselected package libsframe1:amd64.
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7697276Z #9 4.029 (Reading database ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7699279Z (Reading database ... 5%
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7700032Z (Reading database ... 10%
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7700446Z (Reading database ... 15%
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7700844Z (Reading database ... 20%
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7701254Z (Reading database ... 25%
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7701651Z (Reading database ... 30%
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7702049Z (Reading database ... 35%
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7702438Z (Reading database ... 40%
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7703119Z (Reading database ... 45%
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7703533Z (Reading database ... 50%
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7703796Z (Reading database ... 55%
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7704035Z (Reading database ... 60%
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7704265Z (Reading database ... 65%
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7704492Z (Reading database ... 70%
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7704729Z (Reading database ... 75%
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7704960Z (Reading database ... 80%
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7705181Z (Reading database ... 85%
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7705400Z (Reading database ... 90%
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7705622Z (Reading database ... 95%
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7705856Z (Reading database ... 100%
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7706191Z (Reading database ... 5660 files and directories currently installed.)
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7706665Z #9 4.035 Preparing to unpack .../00-libsframe1_2.44-3_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7707049Z #9 4.037 Unpacking libsframe1:amd64 (2.44-3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7707454Z #9 4.053 Selecting previously unselected package binutils-common:amd64.
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7707921Z #9 4.054 Preparing to unpack .../01-binutils-common_2.44-3_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7708325Z #9 4.055 Unpacking binutils-common:amd64 (2.44-3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.7708713Z #9 4.168 Selecting previously unselected package libbinutils:amd64.
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.8874566Z #9 4.170 Preparing to unpack .../02-libbinutils_2.44-3_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.8875448Z #9 4.172 Unpacking libbinutils:amd64 (2.44-3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.8876220Z #9 4.211 Selecting previously unselected package libgprofng0:amd64.
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.8877096Z #9 4.212 Preparing to unpack .../03-libgprofng0_2.44-3_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.8878141Z #9 4.213 Unpacking libgprofng0:amd64 (2.44-3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.8878905Z #9 4.264 Selecting previously unselected package libctf-nobfd0:amd64.
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.8879741Z #9 4.265 Preparing to unpack .../04-libctf-nobfd0_2.44-3_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.8880388Z #9 4.266 Unpacking libctf-nobfd0:amd64 (2.44-3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:01.8883190Z #9 4.287 Selecting previously unselected package libctf0:amd64.
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.0053354Z #9 4.289 Preparing to unpack .../05-libctf0_2.44-3_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.0053841Z #9 4.290 Unpacking libctf0:amd64 (2.44-3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.0054238Z #9 4.307 Selecting previously unselected package libjansson4:amd64.
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.0054743Z #9 4.308 Preparing to unpack .../06-libjansson4_2.14-2+b3_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.0055170Z #9 4.309 Unpacking libjansson4:amd64 (2.14-2+b3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.0055590Z #9 4.323 Selecting previously unselected package binutils-x86-64-linux-gnu.
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.0056128Z #9 4.324 Preparing to unpack .../07-binutils-x86-64-linux-gnu_2.44-3_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.0056581Z #9 4.325 Unpacking binutils-x86-64-linux-gnu (2.44-3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.0056949Z #9 4.405 Selecting previously unselected package binutils.
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.1129719Z #9 4.407 Preparing to unpack .../08-binutils_2.44-3_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.1130459Z #9 4.409 Unpacking binutils (2.44-3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.1131058Z #9 4.436 Selecting previously unselected package libisl23:amd64.
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.1131758Z #9 4.437 Preparing to unpack .../09-libisl23_0.27-1_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.1132348Z #9 4.438 Unpacking libisl23:amd64 (0.27-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.1133471Z #9 4.481 Selecting previously unselected package libmpfr6:amd64.
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.1134166Z #9 4.482 Preparing to unpack .../10-libmpfr6_4.2.2-1_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.1134766Z #9 4.483 Unpacking libmpfr6:amd64 (4.2.2-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.1135367Z #9 4.513 Selecting previously unselected package libmpc3:amd64.
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.2847244Z #9 4.514 Preparing to unpack .../11-libmpc3_1.3.1-1+b3_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.2849094Z #9 4.515 Unpacking libmpc3:amd64 (1.3.1-1+b3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.2850171Z #9 4.532 Selecting previously unselected package cpp-14-x86-64-linux-gnu.
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.2852345Z #9 4.533 Preparing to unpack .../12-cpp-14-x86-64-linux-gnu_14.2.0-19_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.2853618Z #9 4.534 Unpacking cpp-14-x86-64-linux-gnu (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.5448084Z #9 4.945 Selecting previously unselected package cpp-14.
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.6521354Z #9 4.946 Preparing to unpack .../13-cpp-14_14.2.0-19_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.6523457Z #9 4.947 Unpacking cpp-14 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.6524382Z #9 4.960 Selecting previously unselected package cpp-x86-64-linux-gnu.
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.6525509Z #9 4.961 Preparing to unpack .../14-cpp-x86-64-linux-gnu_4%3a14.2.0-1_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.6527605Z #9 4.962 Unpacking cpp-x86-64-linux-gnu (4:14.2.0-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.6553249Z #9 4.975 Selecting previously unselected package cpp.
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.6563880Z #9 4.976 Preparing to unpack .../15-cpp_4%3a14.2.0-1_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.6564710Z #9 4.981 Unpacking cpp (4:14.2.0-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.6565389Z #9 4.995 Selecting previously unselected package libcc1-0:amd64.
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.6566242Z #9 4.995 Preparing to unpack .../16-libcc1-0_14.2.0-19_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.6567030Z #9 4.996 Unpacking libcc1-0:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.6567725Z #9 5.012 Selecting previously unselected package libgomp1:amd64.
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.6585807Z #9 5.013 Preparing to unpack .../17-libgomp1_14.2.0-19_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.6586735Z #9 5.014 Unpacking libgomp1:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.6587753Z #9 5.035 Selecting previously unselected package libitm1:amd64.
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.6588635Z #9 5.035 Preparing to unpack .../18-libitm1_14.2.0-19_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.6589526Z #9 5.036 Unpacking libitm1:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.6589926Z #9 5.052 Selecting previously unselected package libatomic1:amd64.
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.6590380Z #9 5.052 Preparing to unpack .../19-libatomic1_14.2.0-19_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.8072262Z #9 5.055 Unpacking libatomic1:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.8073895Z #9 5.071 Selecting previously unselected package libasan8:amd64.
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.8075183Z #9 5.072 Preparing to unpack .../20-libasan8_14.2.0-19_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.8076014Z #9 5.073 Unpacking libasan8:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:02.8076768Z #9 5.207 Selecting previously unselected package liblsan0:amd64.
+docker	Build and smoke-test serving image	2026-10-03T07:03:03.0025289Z #9 5.208 Preparing to unpack .../21-liblsan0_14.2.0-19_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:03.0026252Z #9 5.210 Unpacking liblsan0:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:03.0027150Z #9 5.277 Selecting previously unselected package libtsan2:amd64.
+docker	Build and smoke-test serving image	2026-10-03T07:03:03.0028156Z #9 5.277 Preparing to unpack .../22-libtsan2_14.2.0-19_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:03.0028595Z #9 5.279 Unpacking libtsan2:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:03.1446828Z #9 5.401 Selecting previously unselected package libubsan1:amd64.
+docker	Build and smoke-test serving image	2026-10-03T07:03:03.1447654Z #9 5.402 Preparing to unpack .../23-libubsan1_14.2.0-19_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:03.1449162Z #9 5.404 Unpacking libubsan1:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:03.1450230Z #9 5.465 Selecting previously unselected package libhwasan0:amd64.
+docker	Build and smoke-test serving image	2026-10-03T07:03:03.1451108Z #9 5.465 Preparing to unpack .../24-libhwasan0_14.2.0-19_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:03.1451873Z #9 5.466 Unpacking libhwasan0:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:03.1453350Z #9 5.545 Selecting previously unselected package libquadmath0:amd64.
+docker	Build and smoke-test serving image	2026-10-03T07:03:03.2926850Z #9 5.546 Preparing to unpack .../25-libquadmath0_14.2.0-19_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:03.2936969Z #9 5.547 Unpacking libquadmath0:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:03.2938248Z #9 5.567 Selecting previously unselected package libgcc-14-dev:amd64.
+docker	Build and smoke-test serving image	2026-10-03T07:03:03.2939321Z #9 5.569 Preparing to unpack .../26-libgcc-14-dev_14.2.0-19_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:03.2940072Z #9 5.570 Unpacking libgcc-14-dev:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:03.2940800Z #9 5.692 Selecting previously unselected package gcc-14-x86-64-linux-gnu.
+docker	Build and smoke-test serving image	2026-10-03T07:03:03.4460712Z #9 5.694 Preparing to unpack .../27-gcc-14-x86-64-linux-gnu_14.2.0-19_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:03.4461894Z #9 5.695 Unpacking gcc-14-x86-64-linux-gnu (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:03.9267646Z #9 6.327 Selecting previously unselected package gcc-14.
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.1514649Z #9 6.328 Preparing to unpack .../28-gcc-14_14.2.0-19_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.1515640Z #9 6.328 Unpacking gcc-14 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.1516346Z #9 6.349 Selecting previously unselected package gcc-x86-64-linux-gnu.
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.1517294Z #9 6.351 Preparing to unpack .../29-gcc-x86-64-linux-gnu_4%3a14.2.0-1_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.1518197Z #9 6.351 Unpacking gcc-x86-64-linux-gnu (4:14.2.0-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.1518901Z #9 6.366 Selecting previously unselected package gcc.
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.1519620Z #9 6.367 Preparing to unpack .../30-gcc_4%3a14.2.0-1_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.1520304Z #9 6.368 Unpacking gcc (4:14.2.0-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.1520931Z #9 6.381 Selecting previously unselected package libc-dev-bin.
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.1521769Z #9 6.383 Preparing to unpack .../31-libc-dev-bin_2.41-12+deb13u4_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.1522595Z #9 6.384 Unpacking libc-dev-bin (2.41-12+deb13u4) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.1523629Z #9 6.399 Selecting previously unselected package linux-libc-dev.
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.1524516Z #9 6.400 Preparing to unpack .../32-linux-libc-dev_6.12.111-1_all.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.3518681Z #9 6.401 Unpacking linux-libc-dev (6.12.111-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.3519410Z #9 6.752 Selecting previously unselected package libcrypt-dev:amd64.
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.5417692Z #9 6.754 Preparing to unpack .../33-libcrypt-dev_1%3a4.4.38-1_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.5418945Z #9 6.759 Unpacking libcrypt-dev:amd64 (1:4.4.38-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.5420100Z #9 6.780 Selecting previously unselected package rpcsvc-proto.
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.5421020Z #9 6.780 Preparing to unpack .../34-rpcsvc-proto_1.4.3-1_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.5421792Z #9 6.781 Unpacking rpcsvc-proto (1.4.3-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.5422537Z #9 6.807 Selecting previously unselected package libc6-dev:amd64.
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.5423842Z #9 6.808 Preparing to unpack .../35-libc6-dev_2.41-12+deb13u4_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.5424681Z #9 6.809 Unpacking libc6-dev:amd64 (2.41-12+deb13u4) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.5425512Z #9 6.941 Selecting previously unselected package libstdc++-14-dev:amd64.
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.6953197Z #9 6.944 Preparing to unpack .../36-libstdc++-14-dev_14.2.0-19_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.6955056Z #9 6.944 Unpacking libstdc++-14-dev:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.7433567Z #9 7.143 Selecting previously unselected package g++-14-x86-64-linux-gnu.
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.8959383Z #9 7.144 Preparing to unpack .../37-g++-14-x86-64-linux-gnu_14.2.0-19_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:04.8960654Z #9 7.145 Unpacking g++-14-x86-64-linux-gnu (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.1730029Z #9 7.572 Selecting previously unselected package g++-14.
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.1730862Z #9 7.572 Preparing to unpack .../38-g++-14_14.2.0-19_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2741233Z #9 7.574 Unpacking g++-14 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2743572Z #9 7.587 Selecting previously unselected package g++-x86-64-linux-gnu.
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2745476Z #9 7.588 Preparing to unpack .../39-g++-x86-64-linux-gnu_4%3a14.2.0-1_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2747119Z #9 7.589 Unpacking g++-x86-64-linux-gnu (4:14.2.0-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2747769Z #9 7.602 Selecting previously unselected package g++.
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2748448Z #9 7.604 Preparing to unpack .../40-g++_4%3a14.2.0-1_amd64.deb ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2749085Z #9 7.605 Unpacking g++ (4:14.2.0-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2749626Z #9 7.630 Setting up binutils-common:amd64 (2.44-3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2750229Z #9 7.632 Setting up linux-libc-dev (6.12.111-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2750810Z #9 7.635 Setting up libctf-nobfd0:amd64 (2.44-3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2751335Z #9 7.637 Setting up libgomp1:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2751673Z #9 7.640 Setting up libsframe1:amd64 (2.44-3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2752018Z #9 7.643 Setting up libjansson4:amd64 (2.14-2+b3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2752342Z #9 7.645 Setting up rpcsvc-proto (1.4.3-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2752959Z #9 7.647 Setting up libmpfr6:amd64 (4.2.2-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2753562Z #9 7.649 Setting up libquadmath0:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2754201Z #9 7.651 Setting up libmpc3:amd64 (1.3.1-1+b3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2754714Z #9 7.653 Setting up libatomic1:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2755039Z #9 7.656 Setting up libubsan1:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2755804Z #9 7.657 Setting up libhwasan0:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2756455Z #9 7.659 Setting up libcrypt-dev:amd64 (1:4.4.38-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2756930Z #9 7.666 Setting up libasan8:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2757440Z #9 7.668 Setting up libtsan2:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2758129Z #9 7.670 Setting up libbinutils:amd64 (2.44-3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2758716Z #9 7.672 Setting up libisl23:amd64 (0.27-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.2759327Z #9 7.674 Setting up libc-dev-bin (2.41-12+deb13u4) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.4913677Z #9 7.677 Setting up libcc1-0:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.4914572Z #9 7.679 Setting up liblsan0:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.4915307Z #9 7.681 Setting up libitm1:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.4916033Z #9 7.683 Setting up libctf0:amd64 (2.44-3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.4916754Z #9 7.685 Setting up libgprofng0:amd64 (2.44-3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.4917885Z #9 7.687 Setting up cpp-14-x86-64-linux-gnu (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.4918642Z #9 7.690 Setting up cpp-14 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.4919360Z #9 7.691 Setting up libc6-dev:amd64 (2.41-12+deb13u4) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.4920145Z #9 7.693 Setting up libgcc-14-dev:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.4920906Z #9 7.696 Setting up libstdc++-14-dev:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.4921720Z #9 7.697 Setting up binutils-x86-64-linux-gnu (2.44-3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.4922592Z #9 7.700 Setting up cpp-x86-64-linux-gnu (4:14.2.0-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.4923666Z #9 7.702 Setting up binutils (2.44-3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.4924321Z #9 7.705 Setting up cpp (4:14.2.0-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.4925041Z #9 7.714 Setting up gcc-14-x86-64-linux-gnu (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.4925899Z #9 7.716 Setting up gcc-x86-64-linux-gnu (4:14.2.0-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.4926666Z #9 7.718 Setting up gcc-14 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.4927425Z #9 7.720 Setting up g++-14-x86-64-linux-gnu (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.4928256Z #9 7.722 Setting up g++-x86-64-linux-gnu (4:14.2.0-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.4928983Z #9 7.724 Setting up g++-14 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.4929606Z #9 7.726 Setting up gcc (4:14.2.0-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.4930230Z #9 7.735 Setting up g++ (4:14.2.0-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.4931146Z #9 7.738 update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+docker	Build and smoke-test serving image	2026-10-03T07:03:05.4932218Z #9 7.741 Processing triggers for libc-bin (2.41-12+deb13u4) ...
+docker	Build and smoke-test serving image	2026-10-03T07:03:07.0582578Z #9 9.458 Collecting numpy==1.26.2 (from -r requirements-build.txt (line 1))
+docker	Build and smoke-test serving image	2026-10-03T07:03:07.2976580Z #9 9.524   Downloading numpy-1.26.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:07.2978731Z #9 9.547      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 kB 2.7 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:07.3495090Z #9 9.749 Collecting setuptools==69.5.1 (from -r requirements-build.txt (line 2))
+docker	Build and smoke-test serving image	2026-10-03T07:03:07.5874670Z #9 9.769   Downloading setuptools-69.5.1-py3-none-any.whl.metadata (6.2 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:07.5876037Z #9 9.816 Collecting wheel==0.43.0 (from -r requirements-build.txt (line 3))
+docker	Build and smoke-test serving image	2026-10-03T07:03:07.5877518Z #9 9.836   Downloading wheel-0.43.0-py3-none-any.whl.metadata (2.2 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:07.7531716Z #9 10.15 Collecting Cython==3.0.12 (from -r requirements-build.txt (line 4))
+docker	Build and smoke-test serving image	2026-10-03T07:03:07.9795735Z #9 10.17   Downloading Cython-3.0.12-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.3 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:07.9797538Z #9 10.23 Downloading numpy-1.26.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.2 MB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:08.3044948Z #9 10.47    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.2/18.2 MB 189.3 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:08.3046196Z #9 10.49 Downloading setuptools-69.5.1-py3-none-any.whl (894 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:08.3047487Z #9 10.50    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 894.6/894.6 kB 349.6 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:08.3048650Z #9 10.52 Downloading wheel-0.43.0-py3-none-any.whl (65 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:08.3049734Z #9 10.52    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.8/65.8 kB 297.1 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:08.3050866Z #9 10.54 Downloading Cython-3.0.12-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.6 MB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:08.3052268Z #9 10.56    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.6/3.6 MB 247.3 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:08.3054011Z #9 10.70 Installing collected packages: wheel, setuptools, numpy, Cython
+docker	Build and smoke-test serving image	2026-10-03T07:03:08.4273581Z #9 10.70   Attempting uninstall: wheel
+docker	Build and smoke-test serving image	2026-10-03T07:03:08.4274452Z #9 10.71     Found existing installation: wheel 0.46.3
+docker	Build and smoke-test serving image	2026-10-03T07:03:08.4275310Z #9 10.71     Uninstalling wheel-0.46.3:
+docker	Build and smoke-test serving image	2026-10-03T07:03:08.4276097Z #9 10.78       Successfully uninstalled wheel-0.46.3
+docker	Build and smoke-test serving image	2026-10-03T07:03:08.4276697Z #9 10.83   Attempting uninstall: setuptools
+docker	Build and smoke-test serving image	2026-10-03T07:03:08.6304392Z #9 10.83     Found existing installation: setuptools 79.0.1
+docker	Build and smoke-test serving image	2026-10-03T07:03:08.6305751Z #9 10.86     Uninstalling setuptools-79.0.1:
+docker	Build and smoke-test serving image	2026-10-03T07:03:08.6306376Z #9 10.88       Successfully uninstalled setuptools-79.0.1
+docker	Build and smoke-test serving image	2026-10-03T07:03:11.0721629Z #9 13.47 Successfully installed Cython-3.0.12 numpy-1.26.2 setuptools-69.5.1 wheel-0.43.0
+docker	Build and smoke-test serving image	2026-10-03T07:03:11.1974475Z #9 13.47 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+docker	Build and smoke-test serving image	2026-10-03T07:03:11.1976696Z #9 13.60
+docker	Build and smoke-test serving image	2026-10-03T07:03:11.1977485Z #9 13.60 [notice] A new release of pip is available: 24.0 -> 26.2.1
+docker	Build and smoke-test serving image	2026-10-03T07:03:11.1978649Z #9 13.60 [notice] To update, run: pip install --upgrade pip
+docker	Build and smoke-test serving image	2026-10-03T07:03:11.8104808Z #9 14.21 Collecting fastapi==0.104.1 (from -r requirements.txt (line 2))
+docker	Build and smoke-test serving image	2026-10-03T07:03:11.9393778Z #9 14.28   Downloading fastapi-0.104.1-py3-none-any.whl.metadata (24 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:11.9395085Z #9 14.34 Collecting uvicorn==0.24.0 (from -r requirements.txt (line 3))
+docker	Build and smoke-test serving image	2026-10-03T07:03:12.1100809Z #9 14.36   Downloading uvicorn-0.24.0-py3-none-any.whl.metadata (6.4 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:12.1541635Z #9 14.55 Collecting pandas==2.1.3 (from -r requirements.txt (line 6))
+docker	Build and smoke-test serving image	2026-10-03T07:03:12.2983748Z #9 14.57   Downloading pandas-2.1.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (18 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:12.2985823Z #9 14.58 Requirement already satisfied: numpy==1.26.2 in /usr/local/lib/python3.11/site-packages (from -r requirements.txt (line 7)) (1.26.2)
+docker	Build and smoke-test serving image	2026-10-03T07:03:12.2987803Z #9 14.70 Collecting scikit-learn==1.3.2 (from -r requirements.txt (line 10))
+docker	Build and smoke-test serving image	2026-10-03T07:03:12.4554717Z #9 14.72   Downloading scikit_learn-1.3.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:12.4557808Z #9 14.75 Collecting scikit-surprise==1.1.3 (from -r requirements.txt (line 11))
+docker	Build and smoke-test serving image	2026-10-03T07:03:12.4559278Z #9 14.77   Downloading scikit-surprise-1.1.3.tar.gz (771 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:12.6550518Z #9 14.86      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 772.0/772.0 kB 9.2 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:12.6552278Z #9 14.90   Preparing metadata (setup.py): started
+docker	Build and smoke-test serving image	2026-10-03T07:03:15.5974980Z #9 18.00   Preparing metadata (setup.py): finished with status 'done'
+docker	Build and smoke-test serving image	2026-10-03T07:03:15.7894062Z #9 18.19 Collecting pydantic==2.5.2 (from -r requirements.txt (line 14))
+docker	Build and smoke-test serving image	2026-10-03T07:03:15.9234409Z #9 18.21   Downloading pydantic-2.5.2-py3-none-any.whl.metadata (65 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:15.9235661Z #9 18.21      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.2/65.2 kB 64.7 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:15.9236555Z #9 18.25 Collecting python-dotenv==1.0.0 (from -r requirements.txt (line 17))
+docker	Build and smoke-test serving image	2026-10-03T07:03:15.9237486Z #9 18.27   Downloading python_dotenv-1.0.0-py3-none-any.whl.metadata (21 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:15.9238578Z #9 18.32 Collecting anyio<4.0.0,>=3.7.1 (from fastapi==0.104.1->-r requirements.txt (line 2))
+docker	Build and smoke-test serving image	2026-10-03T07:03:16.0463338Z #9 18.34   Downloading anyio-3.7.1-py3-none-any.whl.metadata (4.7 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:16.0466211Z #9 18.45 Collecting starlette<0.28.0,>=0.27.0 (from fastapi==0.104.1->-r requirements.txt (line 2))
+docker	Build and smoke-test serving image	2026-10-03T07:03:16.1742541Z #9 18.47   Downloading starlette-0.27.0-py3-none-any.whl.metadata (5.8 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:16.1745192Z #9 18.51 Collecting typing-extensions>=4.8.0 (from fastapi==0.104.1->-r requirements.txt (line 2))
+docker	Build and smoke-test serving image	2026-10-03T07:03:16.1746679Z #9 18.52   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:16.1747900Z #9 18.57 Collecting click>=7.0 (from uvicorn==0.24.0->-r requirements.txt (line 3))
+docker	Build and smoke-test serving image	2026-10-03T07:03:16.3190394Z #9 18.59   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:16.3191612Z #9 18.62 Collecting h11>=0.8 (from uvicorn==0.24.0->-r requirements.txt (line 3))
+docker	Build and smoke-test serving image	2026-10-03T07:03:16.3193211Z #9 18.64   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:16.3194376Z #9 18.72 Collecting python-dateutil>=2.8.2 (from pandas==2.1.3->-r requirements.txt (line 6))
+docker	Build and smoke-test serving image	2026-10-03T07:03:16.4231095Z #9 18.74   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:16.4234505Z #9 18.80 Collecting pytz>=2020.1 (from pandas==2.1.3->-r requirements.txt (line 6))
+docker	Build and smoke-test serving image	2026-10-03T07:03:16.4235549Z #9 18.82   Downloading pytz-2026.4-py2.py3-none-any.whl.metadata (22 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:16.6324270Z #9 18.86 Collecting tzdata>=2022.1 (from pandas==2.1.3->-r requirements.txt (line 6))
+docker	Build and smoke-test serving image	2026-10-03T07:03:16.6325785Z #9 18.88   Downloading tzdata-2026.4-py2.py3-none-any.whl.metadata (1.4 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:16.6959597Z #9 19.10 Collecting scipy>=1.5.0 (from scikit-learn==1.3.2->-r requirements.txt (line 10))
+docker	Build and smoke-test serving image	2026-10-03T07:03:16.8180401Z #9 19.11   Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:16.8181484Z #9 19.12      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.1/62.1 kB 220.2 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:16.8182031Z #9 19.17 Collecting joblib>=1.1.1 (from scikit-learn==1.3.2->-r requirements.txt (line 10))
+docker	Build and smoke-test serving image	2026-10-03T07:03:16.8182597Z #9 19.19   Downloading joblib-1.6.0-py3-none-any.whl.metadata (6.5 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:16.8183414Z #9 19.22 Collecting threadpoolctl>=2.0.0 (from scikit-learn==1.3.2->-r requirements.txt (line 10))
+docker	Build and smoke-test serving image	2026-10-03T07:03:17.0574312Z #9 19.24   Downloading threadpoolctl-3.7.0-py3-none-any.whl.metadata (24 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:17.0575721Z #9 19.28 Collecting annotated-types>=0.4.0 (from pydantic==2.5.2->-r requirements.txt (line 14))
+docker	Build and smoke-test serving image	2026-10-03T07:03:17.0576973Z #9 19.31   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:17.7284044Z #9 20.13 Collecting pydantic-core==2.14.5 (from pydantic==2.5.2->-r requirements.txt (line 14))
+docker	Build and smoke-test serving image	2026-10-03T07:03:17.8534533Z #9 20.15   Downloading pydantic_core-2.14.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:17.8538538Z #9 20.25 Collecting idna>=2.8 (from anyio<4.0.0,>=3.7.1->fastapi==0.104.1->-r requirements.txt (line 2))
+docker	Build and smoke-test serving image	2026-10-03T07:03:17.9695444Z #9 20.27   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:17.9697429Z #9 20.30 Collecting sniffio>=1.1 (from anyio<4.0.0,>=3.7.1->fastapi==0.104.1->-r requirements.txt (line 2))
+docker	Build and smoke-test serving image	2026-10-03T07:03:17.9698869Z #9 20.32   Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:17.9700286Z #9 20.37 Collecting cloudpickle>=3.0 (from joblib>=1.1.1->scikit-learn==1.3.2->-r requirements.txt (line 10))
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.1915872Z #9 20.39   Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.1917986Z #9 20.42 Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas==2.1.3->-r requirements.txt (line 6))
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.1919573Z #9 20.44   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.3120929Z #9 20.71 INFO: pip is looking at multiple versions of scipy to determine which version is compatible with other requirements. This could take a while.
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.4913849Z #9 20.72 Collecting scipy>=1.5.0 (from scikit-learn==1.3.2->-r requirements.txt (line 10))
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.4916224Z #9 20.74   Downloading scipy-1.17.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.4918286Z #9 20.74      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.1/62.1 kB 292.8 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.4919748Z #9 20.80   Downloading scipy-1.16.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (62 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.4921476Z #9 20.80      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.0/62.0 kB 284.5 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.4922568Z #9 20.89 Downloading fastapi-0.104.1-py3-none-any.whl (92 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.6800175Z #9 20.89    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 92.9/92.9 kB 200.9 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.6807400Z #9 20.91 Downloading uvicorn-0.24.0-py3-none-any.whl (59 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.6808944Z #9 20.92    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.6/59.6 kB 295.1 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.6810182Z #9 20.94 Downloading pandas-2.1.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.2 MB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.7974638Z #9 21.08    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.2/12.2 MB 120.6 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.7977280Z #9 21.10 Downloading scikit_learn-1.3.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.9 MB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.7982067Z #9 21.18    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.9/10.9 MB 153.5 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.7983290Z #9 21.20 Downloading pydantic-2.5.2-py3-none-any.whl (381 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.9117403Z #9 21.20    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 381.9/381.9 kB 237.3 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.9118326Z #9 21.22 Downloading python_dotenv-1.0.0-py3-none-any.whl (19 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.9122854Z #9 21.24 Downloading pydantic_core-2.14.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.9124448Z #9 21.25    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 225.4 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.9125704Z #9 21.27 Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.9126787Z #9 21.29 Downloading anyio-3.7.1-py3-none-any.whl (80 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.9128001Z #9 21.29    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.9/80.9 kB 258.8 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:18.9129022Z #9 21.31 Downloading click-8.5.0-py3-none-any.whl (125 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:19.0222743Z #9 21.31    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 125.3/125.3 kB 223.2 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:19.0232454Z #9 21.33 Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:19.0239280Z #9 21.35 Downloading joblib-1.6.0-py3-none-any.whl (306 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:19.0249980Z #9 21.36    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 306.1/306.1 kB 338.3 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:19.0260747Z #9 21.37 Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:19.0269463Z #9 21.38    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 328.2 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:19.0275876Z #9 21.40 Downloading pytz-2026.4-py2.py3-none-any.whl (506 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:19.0286591Z #9 21.40    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 506.7/506.7 kB 335.9 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:19.0288288Z #9 21.42 Downloading scipy-1.16.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (35.9 MB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:19.2550171Z #9 21.55    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.9/35.9 MB 289.8 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:19.2558541Z #9 21.57 Downloading starlette-0.27.0-py3-none-any.whl (66 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:19.2560088Z #9 21.57    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.0/67.0 kB 286.3 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:19.2560928Z #9 21.59 Downloading threadpoolctl-3.7.0-py3-none-any.whl (26 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:19.2561731Z #9 21.61 Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:19.2562839Z #9 21.61    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 278.2 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:19.2563582Z #9 21.63 Downloading tzdata-2026.4-py2.py3-none-any.whl (347 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:19.2564132Z #9 21.64    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 347.5/347.5 kB 341.4 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:19.2564568Z #9 21.65 Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:19.4096333Z #9 21.68 Downloading idna-3.20-py3-none-any.whl (69 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:19.4097842Z #9 21.68    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.6/69.6 kB 291.3 MB/s eta 0:00:00
+docker	Build and smoke-test serving image	2026-10-03T07:03:19.4099097Z #9 21.70 Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:19.4100050Z #9 21.71 Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+docker	Build and smoke-test serving image	2026-10-03T07:03:19.4101092Z #9 21.81 Building wheels for collected packages: scikit-surprise
+docker	Build and smoke-test serving image	2026-10-03T07:03:19.5605368Z #9 21.81   Building wheel for scikit-surprise (setup.py): started
+docker	Build and smoke-test serving image	2026-10-03T07:03:57.1337738Z #9 59.53   Building wheel for scikit-surprise (setup.py): finished with status 'done'
+docker	Build and smoke-test serving image	2026-10-03T07:03:57.2905448Z #9 59.54   Created wheel for scikit-surprise: filename=scikit_surprise-1.1.3-cp311-cp311-linux_x86_64.whl size=4016082 sha256=e51b4358433f7a7ffbfca9d9ce12f8c1ee8c5099d9fd93e03f6efaab67ebfe21
+docker	Build and smoke-test serving image	2026-10-03T07:03:57.2908480Z #9 59.54   Stored in directory: /tmp/pip-ephem-wheel-cache-7h1h3vko/wheels/f4/2b/26/e2a5eae55d3b7688995e66abe7f40473aac6c95ddd8ee174a8
+docker	Build and smoke-test serving image	2026-10-03T07:03:57.2909944Z #9 59.54 Successfully built scikit-surprise
+docker	Build and smoke-test serving image	2026-10-03T07:03:57.3529627Z #9 59.75 Installing collected packages: pytz, tzdata, typing-extensions, threadpoolctl, sniffio, six, scipy, python-dotenv, idna, h11, cloudpickle, click, annotated-types, uvicorn, python-dateutil, pydantic-core, joblib, anyio, starlette, scikit-surprise, scikit-learn, pydantic, pandas, fastapi
+docker	Build and smoke-test serving image	2026-10-03T07:04:06.5980995Z #9 69.00 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+docker	Build and smoke-test serving image	2026-10-03T07:04:06.7325514Z #9 69.00 Successfully installed annotated-types-0.8.0 anyio-3.7.1 click-8.5.0 cloudpickle-3.1.2 fastapi-0.104.1 h11-0.16.0 idna-3.20 joblib-1.6.0 pandas-2.1.3 pydantic-2.5.2 pydantic-core-2.14.5 python-dateutil-2.9.0.post0 python-dotenv-1.0.0 pytz-2026.4 scikit-learn-1.3.2 scikit-surprise-1.1.3 scipy-1.16.3 six-1.17.0 sniffio-1.3.1 starlette-0.27.0 threadpoolctl-3.7.0 typing-extensions-4.16.0 tzdata-2026.4 uvicorn-0.24.0
+docker	Build and smoke-test serving image	2026-10-03T07:04:06.7328748Z #9 69.13
+docker	Build and smoke-test serving image	2026-10-03T07:04:06.7329623Z #9 69.13 [notice] A new release of pip is available: 24.0 -> 26.2.1
+docker	Build and smoke-test serving image	2026-10-03T07:04:06.7330654Z #9 69.13 [notice] To update, run: pip install --upgrade pip
+docker	Build and smoke-test serving image	2026-10-03T07:04:07.6051361Z #9 69.54 Reading package lists...
+docker	Build and smoke-test serving image	2026-10-03T07:04:07.7184650Z #9 70.01 Building dependency tree...
+docker	Build and smoke-test serving image	2026-10-03T07:04:07.8413016Z #9 70.12 Reading state information...
+docker	Build and smoke-test serving image	2026-10-03T07:04:07.8417946Z #9 70.24 The following packages were automatically installed and are no longer required:
+docker	Build and smoke-test serving image	2026-10-03T07:04:07.8419411Z #9 70.24   binutils binutils-common binutils-x86-64-linux-gnu cpp cpp-14
+docker	Build and smoke-test serving image	2026-10-03T07:04:07.9721459Z #9 70.24   cpp-14-x86-64-linux-gnu cpp-x86-64-linux-gnu g++-14 g++-14-x86-64-linux-gnu
+docker	Build and smoke-test serving image	2026-10-03T07:04:07.9723505Z #9 70.24   g++-x86-64-linux-gnu gcc gcc-14 gcc-14-x86-64-linux-gnu gcc-x86-64-linux-gnu
+docker	Build and smoke-test serving image	2026-10-03T07:04:07.9724781Z #9 70.24   libasan8 libatomic1 libbinutils libc-dev-bin libc6-dev libcc1-0 libcrypt-dev
+docker	Build and smoke-test serving image	2026-10-03T07:04:07.9726021Z #9 70.24   libctf-nobfd0 libctf0 libgcc-14-dev libgomp1 libgprofng0 libhwasan0 libisl23
+docker	Build and smoke-test serving image	2026-10-03T07:04:07.9727215Z #9 70.24   libitm1 libjansson4 liblsan0 libmpc3 libmpfr6 libquadmath0 libsframe1
+docker	Build and smoke-test serving image	2026-10-03T07:04:07.9728456Z #9 70.24   libstdc++-14-dev libtsan2 libubsan1 linux-libc-dev rpcsvc-proto
+docker	Build and smoke-test serving image	2026-10-03T07:04:07.9729552Z #9 70.24 Use 'apt autoremove' to remove them.
+docker	Build and smoke-test serving image	2026-10-03T07:04:07.9730379Z #9 70.25 The following packages will be REMOVED:
+docker	Build and smoke-test serving image	2026-10-03T07:04:07.9731147Z #9 70.25   g++*
+docker	Build and smoke-test serving image	2026-10-03T07:04:07.9731922Z #9 70.37 0 upgraded, 0 newly installed, 1 to remove and 1 not upgraded.
+docker	Build and smoke-test serving image	2026-10-03T07:04:07.9733504Z #9 70.37 After this operation, 13.3 kB disk space will be freed.
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.1725257Z #9 70.38 (Reading database ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.1725829Z (Reading database ... 5%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.1726266Z (Reading database ... 10%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.1726693Z (Reading database ... 15%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.1727112Z (Reading database ... 20%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.1727523Z (Reading database ... 25%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.1727931Z (Reading database ... 30%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.1728326Z (Reading database ... 35%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.1728733Z (Reading database ... 40%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.1729131Z (Reading database ... 45%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.1729537Z (Reading database ... 50%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.1730465Z (Reading database ... 55%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.1730883Z (Reading database ... 60%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.1731291Z (Reading database ... 65%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.1731698Z (Reading database ... 70%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.1732182Z (Reading database ... 75%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.1732579Z (Reading database ... 80%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.1733198Z (Reading database ... 85%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.1743638Z (Reading database ... 90%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.1744278Z (Reading database ... 95%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.1744967Z (Reading database ... 100%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.1745868Z (Reading database ... 10604 files and directories currently installed.)
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.1746812Z #9 70.39 Removing g++ (4:14.2.0-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.4538457Z #9 70.42 Reading package lists...
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.5624653Z #9 70.86 Building dependency tree...
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.6853169Z #9 70.96 Reading state information...
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.6854096Z #9 71.08 The following packages will be REMOVED:
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.6854959Z #9 71.08   binutils binutils-common binutils-x86-64-linux-gnu cpp cpp-14
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.6856004Z #9 71.08   cpp-14-x86-64-linux-gnu cpp-x86-64-linux-gnu g++-14 g++-14-x86-64-linux-gnu
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.6893705Z #9 71.08   g++-x86-64-linux-gnu gcc gcc-14 gcc-14-x86-64-linux-gnu gcc-x86-64-linux-gnu
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.8039343Z #9 71.08   libasan8 libatomic1 libbinutils libc-dev-bin libc6-dev libcc1-0 libcrypt-dev
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.8040687Z #9 71.08   libctf-nobfd0 libctf0 libgcc-14-dev libgomp1 libgprofng0 libhwasan0 libisl23
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.8041907Z #9 71.09   libitm1 libjansson4 liblsan0 libmpc3 libmpfr6 libquadmath0 libsframe1
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.8043231Z #9 71.09   libstdc++-14-dev libtsan2 libubsan1 linux-libc-dev rpcsvc-proto
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.8044248Z #9 71.20 0 upgraded, 0 newly installed, 40 to remove and 1 not upgraded.
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.8045182Z #9 71.20 After this operation, 277 MB disk space will be freed.
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9077556Z #9 71.21 (Reading database ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9078259Z (Reading database ... 5%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9081145Z (Reading database ... 10%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9081621Z (Reading database ... 15%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9082055Z (Reading database ... 20%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9082489Z (Reading database ... 25%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9083595Z (Reading database ... 30%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9084700Z (Reading database ... 35%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9084954Z (Reading database ... 40%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9085197Z (Reading database ... 45%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9085433Z (Reading database ... 50%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9085667Z (Reading database ... 55%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9085893Z (Reading database ... 60%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9086121Z (Reading database ... 65%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9086348Z (Reading database ... 70%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9086583Z (Reading database ... 75%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9086809Z (Reading database ... 80%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9087040Z (Reading database ... 85%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9087273Z (Reading database ... 90%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9087512Z (Reading database ... 95%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9087751Z (Reading database ... 100%
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9088103Z (Reading database ... 10601 files and directories currently installed.)
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9088528Z #9 71.22 Removing gcc (4:14.2.0-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9088816Z #9 71.23 Removing g++-14 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9089106Z #9 71.24 Removing gcc-14 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9089383Z #9 71.24 Removing binutils (2.44-3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9089686Z #9 71.25 Removing libgprofng0:amd64 (2.44-3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9090033Z #9 71.26 Removing g++-x86-64-linux-gnu (4:14.2.0-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9090390Z #9 71.27 Removing gcc-x86-64-linux-gnu (4:14.2.0-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9090694Z #9 71.28 Removing cpp (4:14.2.0-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9090970Z #9 71.29 Removing cpp-14 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9091307Z #9 71.30 Removing cpp-x86-64-linux-gnu (4:14.2.0-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:08.9091669Z #9 71.31 Removing g++-14-x86-64-linux-gnu (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.0216164Z #9 71.32 Removing libstdc++-14-dev:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.0222356Z #9 71.42 Removing libc6-dev:amd64 (2.41-12+deb13u4) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.2718394Z #9 71.49 Removing libc-dev-bin (2.41-12+deb13u4) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.2719221Z #9 71.50 Removing libcrypt-dev:amd64 (1:4.4.38-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.2719952Z #9 71.52 Removing linux-libc-dev (6.12.111-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.3476626Z #9 71.75 Removing rpcsvc-proto (1.4.3-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.4576086Z #9 71.76 Removing gcc-14-x86-64-linux-gnu (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.4577160Z #9 71.77 Removing binutils-x86-64-linux-gnu (2.44-3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.4577848Z #9 71.79 Removing libctf0:amd64 (2.44-3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.4578433Z #9 71.80 Removing libbinutils:amd64 (2.44-3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.4579153Z #9 71.81 Removing binutils-common:amd64 (2.44-3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.4580003Z #9 71.82 Removing cpp-14-x86-64-linux-gnu (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.4580755Z #9 71.83 Removing libgcc-14-dev:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.4581495Z #9 71.86 Removing libasan8:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.5607947Z #9 71.87 Removing libatomic1:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.5608756Z #9 71.87 Removing libcc1-0:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.5609488Z #9 71.88 Removing libctf-nobfd0:amd64 (2.44-3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.5610202Z #9 71.89 Removing libgomp1:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.5610895Z #9 71.90 Removing libhwasan0:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.5611575Z #9 71.90 Removing libisl23:amd64 (0.27-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.5612205Z #9 71.91 Removing libitm1:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.5613631Z #9 71.92 Removing libjansson4:amd64 (2.14-2+b3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.5614639Z #9 71.93 Removing liblsan0:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.5618268Z #9 71.95 Removing libmpc3:amd64 (1.3.1-1+b3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.5619999Z #9 71.96 Removing libmpfr6:amd64 (4.2.2-1) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.7568878Z #9 71.97 Removing libquadmath0:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.7569720Z #9 71.98 Removing libsframe1:amd64 (2.44-3) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.7570344Z #9 71.98 Removing libtsan2:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.7570989Z #9 71.99 Removing libubsan1:amd64 (14.2.0-19) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:09.7571731Z #9 72.01 Processing triggers for libc-bin (2.41-12+deb13u4) ...
+docker	Build and smoke-test serving image	2026-10-03T07:04:11.0764390Z #9 DONE 73.5s
+docker	Build and smoke-test serving image	2026-10-03T07:04:11.2742436Z
+docker	Build and smoke-test serving image	2026-10-03T07:04:11.2744163Z #10 [5/7] COPY app/ app/
+docker	Build and smoke-test serving image	2026-10-03T07:04:11.2745480Z #10 DONE 0.0s
+docker	Build and smoke-test serving image	2026-10-03T07:04:11.2752444Z
+docker	Build and smoke-test serving image	2026-10-03T07:04:11.2756318Z #11 [6/7] COPY models/ models/
+docker	Build and smoke-test serving image	2026-10-03T07:04:11.2760393Z #11 DONE 0.0s
+docker	Build and smoke-test serving image	2026-10-03T07:04:11.2760683Z
+docker	Build and smoke-test serving image	2026-10-03T07:04:11.2760898Z #12 [7/7] RUN useradd --create-home appuser
+docker	Build and smoke-test serving image	2026-10-03T07:04:11.2795085Z #12 DONE 0.2s
+docker	Build and smoke-test serving image	2026-10-03T07:04:11.4318564Z
+docker	Build and smoke-test serving image	2026-10-03T07:04:11.4319685Z #13 exporting to image
+docker	Build and smoke-test serving image	2026-10-03T07:04:11.4320427Z #13 exporting layers
+docker	Build and smoke-test serving image	2026-10-03T07:04:15.2373431Z #13 exporting layers 4.0s done
+docker	Build and smoke-test serving image	2026-10-03T07:04:15.2573440Z #13 writing image sha256:4950cdbf26c67dcd4432848a5d179ff0209f0b9e1712fef9ae08c064fc9f7d7b done
+docker	Build and smoke-test serving image	2026-10-03T07:04:15.2588717Z #13 naming to docker.io/library/movie-rating-api:test done
+docker	Build and smoke-test serving image	2026-10-03T07:04:15.2595284Z #13 DONE 4.0s
+docker	Build and smoke-test serving image	2026-10-03T07:04:15.2972767Z e3ce9550a04fbfc6fce98d8f761b5ed251cbfc56331375e82ffae7654ea93793
+docker	Build and smoke-test serving image	2026-10-03T07:04:15.6347878Z Traceback (most recent call last):
+docker	Build and smoke-test serving image	2026-10-03T07:04:15.6349973Z   File "<string>", line 1, in <module>
+docker	Build and smoke-test serving image	2026-10-03T07:04:15.6351104Z   File "/usr/lib/python3.12/json/__init__.py", line 293, in load
+docker	Build and smoke-test serving image	2026-10-03T07:04:15.6396475Z     return loads(fp.read(),
+docker	Build and smoke-test serving image	2026-10-03T07:04:15.6399874Z            ^^^^^^^^^^^^^^^^
+docker	Build and smoke-test serving image	2026-10-03T07:04:15.6400801Z   File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+docker	Build and smoke-test serving image	2026-10-03T07:04:15.6401739Z     return _default_decoder.decode(s)
+docker	Build and smoke-test serving image	2026-10-03T07:04:15.6402498Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+docker	Build and smoke-test serving image	2026-10-03T07:04:15.6424861Z   File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+docker	Build and smoke-test serving image	2026-10-03T07:04:15.6443380Z     obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+docker	Build and smoke-test serving image	2026-10-03T07:04:15.6463282Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+docker	Build and smoke-test serving image	2026-10-03T07:04:15.6471461Z   File "/usr/lib/python3.12/json/decoder.py", line 355, in raw_decode
+docker	Build and smoke-test serving image	2026-10-03T07:04:15.6483515Z     raise JSONDecodeError("Expecting value", s, err.value) from None
+docker	Build and smoke-test serving image	2026-10-03T07:04:15.6503708Z json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+docker	Clean up	﻿2026-10-03T07:04:17.7445480Z ##[group]Run docker rm -f movie-api
+docker	Clean up	2026-10-03T07:04:17.7445829Z ^[[36;1mdocker rm -f movie-api^[[0m
+docker	Clean up	2026-10-03T07:04:17.7509527Z shell: /usr/bin/bash -e {0}
+docker	Clean up	2026-10-03T07:04:17.7509804Z ##[endgroup]
+docker	Clean up	2026-10-03T07:04:17.8847556Z movie-api
+docker	Post Run actions/checkout@v4	﻿2026-10-03T07:04:17.9068023Z Post job cleanup.
+docker	Post Run actions/checkout@v4	2026-10-03T07:04:18.0038500Z [command]/usr/bin/git version
+docker	Post Run actions/checkout@v4	2026-10-03T07:04:18.0108377Z git version 2.55.0
+docker	Post Run actions/checkout@v4	2026-10-03T07:04:18.0174434Z Temporarily overriding HOME='/home/runner/work/_temp/17978340-111d-4c13-9852-3a7d64e75cdf' before making global git config changes
+docker	Post Run actions/checkout@v4	2026-10-03T07:04:18.0175992Z Adding repository directory to the temporary git global config as a safe directory
+docker	Post Run actions/checkout@v4	2026-10-03T07:04:18.0177505Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ddm501-lab3-testing-cicd/ddm501-lab3-testing-cicd
+docker	Post Run actions/checkout@v4	2026-10-03T07:04:18.0224537Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+docker	Post Run actions/checkout@v4	2026-10-03T07:04:18.0292344Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+docker	Post Run actions/checkout@v4	2026-10-03T07:04:18.0660055Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+docker	Post Run actions/checkout@v4	2026-10-03T07:04:18.0703357Z http.https://github.com/.extraheader
+docker	Post Run actions/checkout@v4	2026-10-03T07:04:18.0723749Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+docker	Post Run actions/checkout@v4	2026-10-03T07:04:18.0767342Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+docker	Post Run actions/checkout@v4	2026-10-03T07:04:18.1153531Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+docker	Post Run actions/checkout@v4	2026-10-03T07:04:18.1194929Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+docker	Complete job	﻿2026-10-03T07:04:18.1859391Z Cleaning up orphan processes
+docker	Complete job	2026-10-03T07:04:18.2177284Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/download-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
