@@ -41,7 +41,8 @@ the final serving artifact is subsequently fitted on all 100,000 ratings.
 - [Training output](docs/evidence/training.txt), [metrics](models/metrics.json)
 - [Pre-commit output](docs/evidence/pre-commit.txt)
 - [GitHub Actions](https://github.com/thanhhai12/ddm501-lab3-testing-cicd/actions)
-- CI screenshots are in `docs/evidence/` after the remote run completes.
+- [Screenshot of passing CI](docs/evidence/github-ci-success.jpg)
+- [Submission requirements checklist](docs/SUBMISSION_CHECKLIST.md)
 
 ## API
 
